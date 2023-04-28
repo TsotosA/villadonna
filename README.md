@@ -1,0 +1,5 @@
+| Cmd                | Note                                                                                                                                                                                                        |
+|--------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **_yarn install_** | Install all the required dependencies in the node_modules folder                                                                                                                                            |
+| **_gulp_**         | Runs the project locally, starts the development server and watches for any changes in your code, including your HTML, javascript, sass, etc. The development server is accessible at http://localhost:3000 |
+| **_gulp build_**   | Generates a /dist directory with all the production files                                                                                                                                                   |
