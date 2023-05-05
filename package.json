@@ -1,8 +1,8 @@
 {
 	"private": true,
-	"name": "techwind",
-	"version": "1.8.0",
-	"description": "Tailwind CSS Saas & Software Multipurpose Template",
+	"name": "villadonna",
+	"version": "0.0.1",
+	"description": "description",
 	"main": "gulpfile.js",
 	"author": "ShreeThemes",
 	"email": "support@shreethemes.in",
