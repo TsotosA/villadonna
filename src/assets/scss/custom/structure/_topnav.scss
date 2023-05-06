@@ -221,7 +221,7 @@
         &.nav-light {
           > li {
             > a {
-              // @apply text-black dark:text-white #{!important};
+              @apply text-black dark:text-white #{!important};
               // @apply dark:text-white #{!important};
             }
             &.active {
@@ -233,7 +233,7 @@
             &:hover, 
             &.active{
               > .menu-arrow {
-                // @apply border-indigo-600 #{!important};
+                @apply border-indigo-600 #{!important};
               }
             }
             
@@ -405,7 +405,7 @@
       &.nav-light {
         > li {
           > a {
-            @apply text-white/50 #{!important};
+            @apply text-black/90 #{!important};
           }
           &.active {
             > a {
