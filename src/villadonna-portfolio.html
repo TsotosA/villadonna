@@ -1,12 +1,13 @@
-@@include("partials/dark-theme.html")
+@@include("partials/main.html")
+    <head>
+        @@include("partials/title-meta.html", {"title": "Villa Donna | Greece"})
 
-<head>
-    @@include("partials/title-meta.html", {"title": "Villa Donna | Gallery"})
-
-    <!-- Css -->
-    <link href="assets/libs/tobii/css/tobii.min.css" rel="stylesheet">
-    @@include("partials/head-css.html")
-</head>
+        <!-- Css -->
+        <link href="assets/libs/tiny-slider/tiny-slider.css" rel="stylesheet">
+        <link href="assets/libs/tobii/css/tobii.min.css" rel="stylesheet">
+        <link href="assets/libs/js-datepicker/datepicker.min.css" rel="stylesheet">
+        @@include("partials/head-css.html")
+    </head>
 
 @@include("partials/body.html")
 
@@ -222,7 +223,7 @@
         class="uil uil-arrow-up"></i></a>
 <!-- Back to top -->
 
-@@include("partials/switcher.html")
+<!-- @@include("partials/switcher.html") -->
 
 <!-- JAVASCRIPTS -->
 <script src="assets/libs/shufflejs/shuffle.min.js"></script>
