@@ -87,14 +87,8 @@ function getClosest(elem, selector) {
 function activateMenu() {
     var menuItems = document.getElementsByClassName("sub-menu-item");
     if (menuItems) {
-            console.log(menuItems);
-
         var matchingMenuItem = null;
         for (var idx = 0; idx < menuItems.length; idx++) {
-            console.log('===============================================');
-            console.log(`menuItems[idx].href: ${idx} ${menuItems[idx].href}`);
-            console.log(`window.location.href: ${window.location.href}`);
-            console.log('===============================================');
             if (menuItems[idx].href === window.location.href) {
                 matchingMenuItem = menuItems[idx];
             }
@@ -169,10 +163,10 @@ function windowScroll() {
     }
 }
 
-window.addEventListener('scroll', (ev) => {
-    ev.preventDefault();
-    windowScroll();
-})
+// window.addEventListener('scroll', (ev) => {
+//     ev.preventDefault();
+//     windowScroll();
+// })
 /*********************/
 /*    Back To TOp    */
 /*********************/
