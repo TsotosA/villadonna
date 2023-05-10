@@ -34,6 +34,7 @@ module.exports = {
                 'dark': '#3c4858',
                 'black': '#161c2d',
                 'dark-footer': '#192132',
+                'background-light': '#ECEBE4'
             },
 
             boxShadow: {
