@@ -2,7 +2,7 @@
 /*         Menu                  */
 /*===============================*/
 #topnav {
-    @apply fixed start-0 end-0 top-0 z-999 bg-transparent border-0 transition-all duration-500 ease-in-out  bg-main-green bg-opacity-90;
+    @apply fixed start-0 end-0 top-0 z-999 bg-transparent border-0 transition-all duration-500 ease-in-out  bg-opacity-90;
     .logo {
         @apply ltr:float-left rtl:float-right text-black dark:text-white #{!important};
         .l-dark {
@@ -221,7 +221,7 @@
         &.nav-light {
           > li {
             > a {
-              @apply text-black dark:text-white #{!important};
+              // @apply text-black dark:text-white #{!important};
               // @apply dark:text-white #{!important};
             }
             &.active {
@@ -240,7 +240,7 @@
             &:hover, 
             &.active {
               > a {
-                @apply text-indigo-600 dark:text-indigo-600 #{!important};
+                // @apply text-indigo-600 dark:text-indigo-600 #{!important};
               }
             }
           }
@@ -405,7 +405,7 @@
       &.nav-light {
         > li {
           > a {
-            @apply text-black/90 #{!important};
+            @apply text-white #{!important};
           }
           &.active {
             > a {
