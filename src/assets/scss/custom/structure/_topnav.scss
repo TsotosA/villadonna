@@ -409,7 +409,7 @@
           }
           &.active {
             > a {
-              @apply text-white #{!important};
+              @apply text-gold-1 #{!important};
             }
           }
           &:hover {
@@ -466,7 +466,7 @@
 
 @media (max-width: 991px) {
   #topnav {
-    @apply bg-white dark:bg-slate-900 shadow dark:shadow-gray-800 min-h-[74px];
+    @apply dark:bg-slate-900 shadow dark:shadow-gray-800 min-h-[74px];
     .logo {
       .l-dark {
         @apply inline-block #{!important};

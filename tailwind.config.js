@@ -31,6 +31,8 @@ module.exports = {
         extend: {
             colors: {
                 'main-green': '#4b6462',
+                'gold-1': '#CBB26B',
+                'gold-2': '#F6D917',
                 'dark': '#3c4858',
                 'black': '#161c2d',
                 'dark-footer': '#192132',
