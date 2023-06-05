@@ -642,8 +642,14 @@ video {
 .-bottom-\[2px\]{
   bottom: -2px !important;
 }
+.-bottom-\[350px\]{
+  bottom: -350px !important;
+}
 .-end-11{
   inset-inline-end: -2.75rem !important;
+}
+.-end-\[100px\]{
+  inset-inline-end: -100px !important;
 }
 .-right-2{
   right: -0.5rem !important;
@@ -651,8 +657,14 @@ video {
 .-right-3{
   right: -0.75rem !important;
 }
+.-start-\[100px\]{
+  inset-inline-start: -100px !important;
+}
 .-top-\[10px\]{
   top: -10px !important;
+}
+.-top-\[350px\]{
+  top: -350px !important;
 }
 .bottom-0{
   bottom: 0px !important;
@@ -759,21 +771,6 @@ video {
 .top-\[40\%\]{
   top: 40% !important;
 }
-.-bottom-\[350px\]{
-  bottom: -350px !important;
-}
-.-end-\[100px\]{
-  inset-inline-end: -100px !important;
-}
-.-start-\[100px\]{
-  inset-inline-start: -100px !important;
-}
-.-top-\[350px\]{
-  top: -350px !important;
-}
-.bottom-24{
-  bottom: 6rem !important;
-}
 .-z-1{
   z-index: -1 !important;
 }
@@ -795,14 +792,14 @@ video {
 .z-3{
   z-index: 3 !important;
 }
+.z-30{
+  z-index: 30 !important;
+}
 .z-40{
   z-index: 40 !important;
 }
 .z-50{
   z-index: 50 !important;
-}
-.z-30{
-  z-index: 30 !important;
 }
 .order-1{
   -webkit-box-ordinal-group: 2 !important;
@@ -1122,17 +1119,14 @@ video {
 .h-screen{
   height: 100vh !important;
 }
-.h-48{
-  height: 12rem !important;
-}
 .max-h-6{
   max-height: 1.5rem !important;
 }
-.min-h-screen{
-  min-height: 100vh !important;
-}
 .min-h-full{
   min-height: 100% !important;
+}
+.min-h-screen{
+  min-height: 100vh !important;
 }
 .w-10{
   width: 2.5rem !important;
@@ -1194,6 +1188,9 @@ video {
 .w-\[98\%\]{
   width: 98% !important;
 }
+.w-auto{
+  width: auto !important;
+}
 .w-fit{
   width: -webkit-fit-content !important;
   width: -moz-fit-content !important;
@@ -1201,12 +1198,6 @@ video {
 }
 .w-full{
   width: 100% !important;
-}
-.w-48{
-  width: 12rem !important;
-}
-.w-auto{
-  width: auto !important;
 }
 .min-w-\[45px\]{
   min-width: 45px !important;
@@ -1516,6 +1507,9 @@ video {
 .bg-black\/50{
   background-color: rgb(22 28 45 / 0.5) !important;
 }
+.bg-black\/70{
+  background-color: rgb(22 28 45 / 0.7) !important;
+}
 .bg-dark{
   --tw-bg-opacity: 1 !important;
   background-color: rgb(60 72 88 / var(--tw-bg-opacity)) !important;
@@ -1587,6 +1581,9 @@ video {
   --tw-bg-opacity: 1 !important;
   background-color: rgb(15 23 42 / var(--tw-bg-opacity)) !important;
 }
+.bg-slate-900\/70{
+  background-color: rgb(15 23 42 / 0.7) !important;
+}
 .bg-transparent{
   background-color: transparent !important;
 }
@@ -1600,17 +1597,20 @@ video {
 .bg-white\/70{
   background-color: rgb(255 255 255 / 0.7) !important;
 }
-.bg-black\/70{
-  background-color: rgb(22 28 45 / 0.7) !important;
-}
-.bg-slate-900\/70{
-  background-color: rgb(15 23 42 / 0.7) !important;
-}
 .bg-opacity-50{
   --tw-bg-opacity: 0.5 !important;
 }
 .bg-\[url\(\'\.\.\/\.\.\/assets\/images\/app\/bg\.png\'\)\]{
   background-image: url('../../assets/images/app/bg.png') !important;
+}
+.bg-\[url\(\'\.\.\/\.\.\/assets\/images\/business\/bg01\.jpg\'\)\]{
+  background-image: url('../../assets/images/business/bg01.jpg') !important;
+}
+.bg-\[url\(\'\.\.\/\.\.\/assets\/images\/business\/bg02\.jpg\'\)\]{
+  background-image: url('../../assets/images/business/bg02.jpg') !important;
+}
+.bg-\[url\(\'\.\.\/\.\.\/assets\/images\/business\/bg03\.jpg\'\)\]{
+  background-image: url('../../assets/images/business/bg03.jpg') !important;
 }
 .bg-\[url\(\'\.\.\/\.\.\/assets\/images\/company\/aboutus\.jpg\'\)\]{
   background-image: url('../../assets/images/company/aboutus.jpg') !important;
@@ -1639,9 +1639,6 @@ video {
 .bg-\[url\(\'\.\.\/\.\.\/assets\/images\/villadonna\/emre-9SDh6PF2g_U-unsplash\.jpg\'\)\]{
   background-image: url('../../assets/images/villadonna/emre-9SDh6PF2g_U-unsplash.jpg') !important;
 }
-.bg-\[url\(\'\.\.\/\.\.\/assets\/images\/villadonna\/eve-ji-4Ysx7HlgLJw-unsplash\.jpg\'\)\]{
-  background-image: url('../../assets/images/villadonna/eve-ji-4Ysx7HlgLJw-unsplash.jpg') !important;
-}
 .bg-\[url\(\'\.\.\/\.\.\/assets\/images\/villadonna\/kevin-martin-jose-1hgw5wp81yU-unsplash\.jpg\'\)\]{
   background-image: url('../../assets/images/villadonna/kevin-martin-jose-1hgw5wp81yU-unsplash.jpg') !important;
 }
@@ -1662,15 +1659,6 @@ video {
 }
 .bg-none{
   background-image: none !important;
-}
-.bg-\[url\(\'\.\.\/\.\.\/assets\/images\/business\/bg01\.jpg\'\)\]{
-  background-image: url('../../assets/images/business/bg01.jpg') !important;
-}
-.bg-\[url\(\'\.\.\/\.\.\/assets\/images\/business\/bg02\.jpg\'\)\]{
-  background-image: url('../../assets/images/business/bg02.jpg') !important;
-}
-.bg-\[url\(\'\.\.\/\.\.\/assets\/images\/business\/bg03\.jpg\'\)\]{
-  background-image: url('../../assets/images/business/bg03.jpg') !important;
 }
 .from-indigo-500{
   --tw-gradient-from: #6366f1 var(--tw-gradient-from-position) !important;
@@ -1810,6 +1798,10 @@ video {
   padding-top: 4rem !important;
   padding-bottom: 4rem !important;
 }
+.py-20{
+  padding-top: 5rem !important;
+  padding-bottom: 5rem !important;
+}
 .py-32{
   padding-top: 8rem !important;
   padding-bottom: 8rem !important;
@@ -1853,10 +1845,6 @@ video {
 .py-\[60px\]{
   padding-top: 60px !important;
   padding-bottom: 60px !important;
-}
-.py-20{
-  padding-top: 5rem !important;
-  padding-bottom: 5rem !important;
 }
 .pb-0{
   padding-bottom: 0px !important;
@@ -2127,12 +2115,12 @@ video {
 .text-white\/70{
   color: rgb(255 255 255 / 0.7) !important;
 }
+.text-white\/80{
+  color: rgb(255 255 255 / 0.8) !important;
+}
 .text-yellow-500{
   --tw-text-opacity: 1 !important;
   color: rgb(234 179 8 / var(--tw-text-opacity)) !important;
-}
-.text-white\/80{
-  color: rgb(255 255 255 / 0.8) !important;
 }
 .opacity-0{
   opacity: 0 !important;
@@ -5450,6 +5438,10 @@ html[dir=rtl] .tns-visually-hidden {
     -webkit-margin-start: 0px !important;
             margin-inline-start: 0px !important;
   }
+  .md\:ms-auto{
+    -webkit-margin-start: auto !important;
+            margin-inline-start: auto !important;
+  }
   .md\:mt-0{
     margin-top: 0px !important;
   }
@@ -5458,10 +5450,6 @@ html[dir=rtl] .tns-visually-hidden {
   }
   .md\:mt-8{
     margin-top: 2rem !important;
-  }
-  .md\:ms-auto{
-    -webkit-margin-start: auto !important;
-            margin-inline-start: auto !important;
   }
   .md\:block{
     display: block !important;
@@ -5687,10 +5675,6 @@ html[dir=rtl] .tns-visually-hidden {
   }
   .lg\:mt-6{
     margin-top: 1.5rem !important;
-  }
-  .lg\:ms-4{
-    -webkit-margin-start: 1rem !important;
-            margin-inline-start: 1rem !important;
   }
   .lg\:flex{
     display: -webkit-box !important;
