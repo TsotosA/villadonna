@@ -1119,6 +1119,9 @@ video {
 .h-screen{
   height: 100vh !important;
 }
+.max-h-10{
+  max-height: 2.5rem !important;
+}
 .max-h-6{
   max-height: 1.5rem !important;
 }
@@ -1603,9 +1606,6 @@ video {
 .bg-\[url\(\'\.\.\/\.\.\/assets\/images\/app\/bg\.png\'\)\]{
   background-image: url('../../assets/images/app/bg.png') !important;
 }
-.bg-\[url\(\'\.\.\/\.\.\/assets\/images\/business\/bg01\.jpg\'\)\]{
-  background-image: url('../../assets/images/business/bg01.jpg') !important;
-}
 .bg-\[url\(\'\.\.\/\.\.\/assets\/images\/business\/bg02\.jpg\'\)\]{
   background-image: url('../../assets/images/business/bg02.jpg') !important;
 }
@@ -1620,6 +1620,9 @@ video {
 }
 .bg-\[url\(\'\.\.\/\.\.\/assets\/images\/food\/food-menu\.png\'\)\]{
   background-image: url('../../assets/images/food/food-menu.png') !important;
+}
+.bg-\[url\(\'\.\.\/\.\.\/assets\/images\/gallery\/exterior\/20210619_084725-min\.jpg\'\)\]{
+  background-image: url('../../assets/images/gallery/exterior/20210619_084725-min.jpg') !important;
 }
 .bg-\[url\(\'\.\.\/\.\.\/assets\/images\/gallery\/exterior\/20230527_194853-min\.jpg\'\)\]{
   background-image: url('../../assets/images/gallery/exterior/20230527_194853-min.jpg') !important;
