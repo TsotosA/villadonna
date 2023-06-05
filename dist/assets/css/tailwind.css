@@ -5579,6 +5579,10 @@ html[dir=rtl] .tns-visually-hidden {
     font-size: 3rem !important;
     line-height: 1 !important;
   }
+  .md\:text-8xl{
+    font-size: 6rem !important;
+    line-height: 1 !important;
+  }
   .md\:leading-normal{
     line-height: 1.5 !important;
   }
