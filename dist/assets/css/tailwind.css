@@ -856,9 +856,6 @@ video {
   -webkit-margin-start: -10px !important;
           margin-inline-start: -10px !important;
 }
-.-mt-10{
-  margin-top: -2.5rem !important;
-}
 .-mt-16{
   margin-top: -4rem !important;
 }
@@ -1610,10 +1607,6 @@ video {
   background-image: -webkit-gradient(linear, left top, left bottom, from(var(--tw-gradient-stops))) !important;
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops)) !important;
 }
-.bg-gradient-to-br{
-  background-image: -webkit-gradient(linear, left top, right bottom, from(var(--tw-gradient-stops))) !important;
-  background-image: linear-gradient(to bottom right, var(--tw-gradient-stops)) !important;
-}
 .bg-gradient-to-r{
   background-image: -webkit-gradient(linear, left top, right top, from(var(--tw-gradient-stops))) !important;
   background-image: linear-gradient(to right, var(--tw-gradient-stops)) !important;
@@ -1628,16 +1621,6 @@ video {
 .from-indigo-500{
   --tw-gradient-from: #6366f1 var(--tw-gradient-from-position) !important;
   --tw-gradient-to: rgb(99 102 241 / 0) var(--tw-gradient-to-position) !important;
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
-}
-.from-indigo-600\/20{
-  --tw-gradient-from: rgb(79 70 229 / 0.2) var(--tw-gradient-from-position) !important;
-  --tw-gradient-to: rgb(79 70 229 / 0) var(--tw-gradient-to-position) !important;
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
-}
-.from-indigo-600\/70{
-  --tw-gradient-from: rgb(79 70 229 / 0.7) var(--tw-gradient-from-position) !important;
-  --tw-gradient-to: rgb(79 70 229 / 0) var(--tw-gradient-to-position) !important;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
 }
 .from-main-green{
@@ -1663,10 +1646,6 @@ video {
   --tw-gradient-to: rgb(22 28 45 / 0)  var(--tw-gradient-to-position) !important;
   --tw-gradient-stops: var(--tw-gradient-from), rgb(22 28 45 / 0.5) var(--tw-gradient-via-position), var(--tw-gradient-to) !important;
 }
-.via-fuchsia-600\/20{
-  --tw-gradient-to: rgb(192 38 211 / 0)  var(--tw-gradient-to-position) !important;
-  --tw-gradient-stops: var(--tw-gradient-from), rgb(192 38 211 / 0.2) var(--tw-gradient-via-position), var(--tw-gradient-to) !important;
-}
 .via-white{
   --tw-gradient-to: rgb(255 255 255 / 0)  var(--tw-gradient-to-position) !important;
   --tw-gradient-stops: var(--tw-gradient-from), #fff var(--tw-gradient-via-position), var(--tw-gradient-to) !important;
@@ -1683,12 +1662,6 @@ video {
 }
 .to-indigo-600\/10{
   --tw-gradient-to: rgb(79 70 229 / 0.1) var(--tw-gradient-to-position) !important;
-}
-.to-orange-600\/20{
-  --tw-gradient-to: rgb(234 88 12 / 0.2) var(--tw-gradient-to-position) !important;
-}
-.to-orange-600\/70{
-  --tw-gradient-to: rgb(234 88 12 / 0.7) var(--tw-gradient-to-position) !important;
 }
 .to-transparent{
   --tw-gradient-to: transparent var(--tw-gradient-to-position) !important;
@@ -4840,13 +4813,6 @@ html[dir=rtl] .tns-visually-hidden {
   color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
 }
 
-.hover\:shadow-lg:hover{
-  --tw-shadow: 0 10px 25px -3px rgb(60 72 88 / 0.15) !important;
-  --tw-shadow-colored: 0 10px 25px -3px var(--tw-shadow-color) !important;
-  -webkit-box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important;
-          box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important;
-}
-
 .hover\:shadow-md:hover{
   --tw-shadow: 0 5px 13px rgb(60 72 88 / 0.20) !important;
   --tw-shadow-colored: 0 5px 13px var(--tw-shadow-color) !important;
@@ -5362,9 +5328,6 @@ html[dir=rtl] .tns-visually-hidden {
   .sm\:h-2\/3{
     height: 66.666667% !important;
   }
-  .sm\:grid-cols-2{
-    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-  }
 }
 
 @media (min-width: 768px){
@@ -5646,9 +5609,6 @@ html[dir=rtl] .tns-visually-hidden {
   }
   .lg\:grid-cols-12{
     grid-template-columns: repeat(12, minmax(0, 1fr)) !important;
-  }
-  .lg\:grid-cols-2{
-    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
   }
   .lg\:grid-cols-3{
     grid-template-columns: repeat(3, minmax(0, 1fr)) !important;

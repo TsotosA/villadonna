@@ -341,3 +341,22 @@ try{
     switcherRtl?.addEventListener("click" ,changeLayout )
 }
 catch(err){}
+
+/*********************/
+/* Weather */
+/*********************/
+
+try {
+    console.log(`weather 1`);
+    (async function () {
+        // do some stuff
+        const response = await fetch('https://api.open-meteo.com/v1/forecast?latitude=37.25&longitude=21.67&current_weather=true');
+        const jsonData = await response.json();
+        console.log(jsonData);
+        const currentTmpElement = document.querySelector('#currentTemp');
+        currentTmpElement.textContent = jsonData.current_weather.temperature;
+        setTimeout(arguments.callee, 1800000);
+    })();
+} catch (e) {
+    console.log(e);
+}
