@@ -1621,6 +1621,12 @@ video {
 .bg-\[url\(\'\.\.\/\.\.\/assets\/images\/food\/food-menu\.png\'\)\]{
   background-image: url('../../assets/images/food/food-menu.png') !important;
 }
+.bg-\[url\(\'\.\.\/\.\.\/assets\/images\/gallery\/exterior\/20230527_194853-min\.jpg\'\)\]{
+  background-image: url('../../assets/images/gallery/exterior/20230527_194853-min.jpg') !important;
+}
+.bg-\[url\(\'\.\.\/\.\.\/assets\/images\/gallery\/exterior\/MAIN_PHOTO-min\.jpg\'\)\]{
+  background-image: url('../../assets/images/gallery/exterior/MAIN_PHOTO-min.jpg') !important;
+}
 .bg-\[url\(\'\.\.\/\.\.\/assets\/images\/helpcenter\.jpg\'\)\]{
   background-image: url('../../assets/images/helpcenter.jpg') !important;
 }
@@ -1642,9 +1648,6 @@ video {
 .bg-\[url\(\'\.\.\/\.\.\/assets\/images\/villadonna\/kevin-martin-jose-1hgw5wp81yU-unsplash\.jpg\'\)\]{
   background-image: url('../../assets/images/villadonna/kevin-martin-jose-1hgw5wp81yU-unsplash.jpg') !important;
 }
-.bg-\[url\(\'\.\.\/\.\.\/assets\/images\/villadonna\/r-architecture-KQPEhYweLrQ-unsplash\.jpg\'\)\]{
-  background-image: url('../../assets/images/villadonna/r-architecture-KQPEhYweLrQ-unsplash.jpg') !important;
-}
 .bg-gradient-to-b{
   background-image: -webkit-gradient(linear, left top, left bottom, from(var(--tw-gradient-stops))) !important;
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops)) !important;
@@ -1659,18 +1662,6 @@ video {
 }
 .bg-none{
   background-image: none !important;
-}
-.bg-\[url\(\'\.\.\/\.\.\/assets\/images\/gallery\/20230527_205353-min\.jpg\'\)\]{
-  background-image: url('../../assets/images/gallery/20230527_205353-min.jpg') !important;
-}
-.bg-\[url\(\'\.\.\/\.\.\/assets\/images\/gallery\/exterior\/20230527_205353-min\.jpg\'\)\]{
-  background-image: url('../../assets/images/gallery/exterior/20230527_205353-min.jpg') !important;
-}
-.bg-\[url\(\'\.\.\/\.\.\/assets\/images\/gallery\/exterior\/MAIN_PHOTO-min\.jpg\'\)\]{
-  background-image: url('../../assets/images/gallery/exterior/MAIN_PHOTO-min.jpg') !important;
-}
-.bg-\[url\(\'\.\.\/\.\.\/assets\/images\/gallery\/exterior\/20230527_194853-min\.jpg\'\)\]{
-  background-image: url('../../assets/images/gallery/exterior/20230527_194853-min.jpg') !important;
 }
 .from-indigo-500{
   --tw-gradient-from: #6366f1 var(--tw-gradient-from-position) !important;
