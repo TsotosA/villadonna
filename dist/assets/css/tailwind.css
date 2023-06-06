@@ -1618,14 +1618,14 @@ video {
 .bg-\[url\(\'\.\.\/\.\.\/assets\/images\/gallery\/area\/20230526_204155\.jpg\'\)\]{
   background-image: url('../../assets/images/gallery/area/20230526_204155.jpg') !important;
 }
+.bg-\[url\(\'\.\.\/\.\.\/assets\/images\/gallery\/exterior\/20230527_194111-min-narrowed\.webp\'\)\]{
+  background-image: url('../../assets/images/gallery/exterior/20230527_194111-min-narrowed.webp') !important;
+}
 .bg-\[url\(\'\.\.\/\.\.\/assets\/images\/gallery\/exterior\/20230527_194853-min\.jpg\'\)\]{
   background-image: url('../../assets/images/gallery/exterior/20230527_194853-min.jpg') !important;
 }
 .bg-\[url\(\'\.\.\/\.\.\/assets\/images\/gallery\/exterior\/20230527_205353-min\.jpg\'\)\]{
   background-image: url('../../assets/images/gallery/exterior/20230527_205353-min.jpg') !important;
-}
-.bg-\[url\(\'\.\.\/\.\.\/assets\/images\/gallery\/exterior\/MAIN_PHOTO-min-widened\.webp\'\)\]{
-  background-image: url('../../assets/images/gallery/exterior/MAIN_PHOTO-min-widened.webp') !important;
 }
 .bg-\[url\(\'\.\.\/\.\.\/assets\/images\/gallery\/interior\/Kitchen-6-min\.jpg\'\)\]{
   background-image: url('../../assets/images/gallery/interior/Kitchen-6-min.jpg') !important;
@@ -5393,6 +5393,9 @@ html[dir=rtl] .tns-visually-hidden {
   }
   .sm\:h-2\/3{
     height: 66.666667% !important;
+  }
+  .sm\:bg-\[url\(\'\.\.\/\.\.\/assets\/images\/gallery\/exterior\/MAIN_PHOTO-min-widened\.webp\'\)\]{
+    background-image: url('../../assets/images/gallery/exterior/MAIN_PHOTO-min-widened.webp') !important;
   }
 }
 
