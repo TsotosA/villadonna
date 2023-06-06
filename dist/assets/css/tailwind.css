@@ -1584,8 +1584,8 @@ video {
   --tw-bg-opacity: 1 !important;
   background-color: rgb(15 23 42 / var(--tw-bg-opacity)) !important;
 }
-.bg-slate-900\/70{
-  background-color: rgb(15 23 42 / 0.7) !important;
+.bg-slate-900\/20{
+  background-color: rgb(15 23 42 / 0.2) !important;
 }
 .bg-transparent{
   background-color: transparent !important;
@@ -1614,6 +1614,9 @@ video {
 }
 .bg-\[url\(\'\.\.\/\.\.\/assets\/images\/food\/food-menu\.png\'\)\]{
   background-image: url('../../assets/images/food/food-menu.png') !important;
+}
+.bg-\[url\(\'\.\.\/\.\.\/assets\/images\/gallery\/area\/20230526_204155\.jpg\'\)\]{
+  background-image: url('../../assets/images/gallery/area/20230526_204155.jpg') !important;
 }
 .bg-\[url\(\'\.\.\/\.\.\/assets\/images\/gallery\/exterior\/20230527_194853-min\.jpg\'\)\]{
   background-image: url('../../assets/images/gallery/exterior/20230527_194853-min.jpg') !important;
@@ -1914,6 +1917,9 @@ video {
 }
 .text-center{
   text-align: center !important;
+}
+.text-justify{
+  text-align: justify !important;
 }
 .text-start{
   text-align: start !important;
