@@ -1624,8 +1624,8 @@ video {
 .bg-\[url\(\'\.\.\/\.\.\/assets\/images\/gallery\/exterior\/20230527_205353-min\.jpg\'\)\]{
   background-image: url('../../assets/images/gallery/exterior/20230527_205353-min.jpg') !important;
 }
-.bg-\[url\(\'\.\.\/\.\.\/assets\/images\/gallery\/exterior\/MAIN_PHOTO-min\.webp\'\)\]{
-  background-image: url('../../assets/images/gallery/exterior/MAIN_PHOTO-min.webp') !important;
+.bg-\[url\(\'\.\.\/\.\.\/assets\/images\/gallery\/exterior\/MAIN_PHOTO-min-widened\.webp\'\)\]{
+  background-image: url('../../assets/images/gallery/exterior/MAIN_PHOTO-min-widened.webp') !important;
 }
 .bg-\[url\(\'\.\.\/\.\.\/assets\/images\/gallery\/interior\/Kitchen-6-min\.jpg\'\)\]{
   background-image: url('../../assets/images/gallery/interior/Kitchen-6-min.jpg') !important;
