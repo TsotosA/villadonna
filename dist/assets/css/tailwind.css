@@ -1606,12 +1606,6 @@ video {
 .bg-\[url\(\'\.\.\/\.\.\/assets\/images\/app\/bg\.png\'\)\]{
   background-image: url('../../assets/images/app/bg.png') !important;
 }
-.bg-\[url\(\'\.\.\/\.\.\/assets\/images\/business\/bg02\.jpg\'\)\]{
-  background-image: url('../../assets/images/business/bg02.jpg') !important;
-}
-.bg-\[url\(\'\.\.\/\.\.\/assets\/images\/business\/bg03\.jpg\'\)\]{
-  background-image: url('../../assets/images/business/bg03.jpg') !important;
-}
 .bg-\[url\(\'\.\.\/\.\.\/assets\/images\/company\/aboutus\.jpg\'\)\]{
   background-image: url('../../assets/images/company/aboutus.jpg') !important;
 }
@@ -1621,14 +1615,20 @@ video {
 .bg-\[url\(\'\.\.\/\.\.\/assets\/images\/food\/food-menu\.png\'\)\]{
   background-image: url('../../assets/images/food/food-menu.png') !important;
 }
-.bg-\[url\(\'\.\.\/\.\.\/assets\/images\/gallery\/exterior\/20210619_084725-min\.jpg\'\)\]{
-  background-image: url('../../assets/images/gallery/exterior/20210619_084725-min.jpg') !important;
-}
 .bg-\[url\(\'\.\.\/\.\.\/assets\/images\/gallery\/exterior\/20230527_194853-min\.jpg\'\)\]{
   background-image: url('../../assets/images/gallery/exterior/20230527_194853-min.jpg') !important;
 }
+.bg-\[url\(\'\.\.\/\.\.\/assets\/images\/gallery\/exterior\/20230527_205353-min\.jpg\'\)\]{
+  background-image: url('../../assets/images/gallery/exterior/20230527_205353-min.jpg') !important;
+}
 .bg-\[url\(\'\.\.\/\.\.\/assets\/images\/gallery\/exterior\/MAIN_PHOTO-min\.webp\'\)\]{
   background-image: url('../../assets/images/gallery/exterior/MAIN_PHOTO-min.webp') !important;
+}
+.bg-\[url\(\'\.\.\/\.\.\/assets\/images\/gallery\/interior\/Kitchen-6-min\.jpg\'\)\]{
+  background-image: url('../../assets/images/gallery/interior/Kitchen-6-min.jpg') !important;
+}
+.bg-\[url\(\'\.\.\/\.\.\/assets\/images\/gallery\/interior\/Room-min\.jpg\'\)\]{
+  background-image: url('../../assets/images/gallery/interior/Room-min.jpg') !important;
 }
 .bg-\[url\(\'\.\.\/\.\.\/assets\/images\/helpcenter\.jpg\'\)\]{
   background-image: url('../../assets/images/helpcenter.jpg') !important;
