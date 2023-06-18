@@ -1,6 +1,30 @@
 <!DOCTYPE html>
 <html lang="en" class="light scroll-smooth" dir="ltr">
 <head>
+    <!--<script async src="https://www.googletagmanager.com/gtag/js?id=G-SLQVG5KZ6T"></script>-->
+    <script type="text/javascript">
+        if (document.location.hostname.search("villadonna-messinia") !== -1) {
+            console.log('enabled google analytics for production');
+            <!-- Google tag (gtag.js) -->
+
+            fetch('https://www.googletagmanager.com/gtag/js?id=G-SLQVG5KZ6T').then( res => {
+
+                window.dataLayer = window.dataLayer || [];
+
+                function gtag() {
+                    dataLayer.push(arguments);
+                }
+
+                gtag('js', new Date());
+
+                gtag('config', 'G-SLQVG5KZ6T');
+
+            });
+
+        } else if (document.location.hostname.search("localhost") !== -1) {
+            console.log('disabled google analytics for localhost dev');
+        }
+    </script>
     <meta charset="UTF-8" />
     <title>Villa Donna | Greece | Amenities</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -160,7 +184,6 @@
     <div class="container md:mt-24 mt-16">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-[30px]">
             <div class="blog relative rounded-md shadow dark:shadow-gray-800 overflow-hidden">
-                <img src="assets/images/blog/01.jpg" alt="">
                 <div class="content">
                     <ul class="max-w-md space-y-1 text-gray-500 list-inside dark:text-gray-400">
                         <li class="flex items-center">
@@ -383,7 +406,6 @@
                 </div>
             </div>
             <div class="blog relative rounded-md shadow dark:shadow-gray-800 overflow-hidden">
-                <img src="assets/images/blog/01.jpg" alt="">
                 <div class="content">
                     <ul class="max-w-md space-y-1 text-gray-500 list-inside dark:text-gray-400">
                         <li class="flex items-center">
