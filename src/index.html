@@ -1,155 +1,69 @@
 @@include("partials/main.html")
-    <head>
-        @@include("partials/title-meta.html", {"title": "Villa Donna | Greece"})
+<head>
+    @@include("partials/title-meta.html", {"title": "Villa Donna | Greece"})
+    <link href="assets/libs/tiny-slider/tiny-slider.css" rel="stylesheet">
+    <link href="assets/libs/tobii/css/tobii.min.css" rel="stylesheet">
+    <link href="assets/libs/js-datepicker/datepicker.min.css" rel="stylesheet">
+    @@include("partials/head-css.html")
+</head>
 
-        <!-- Css -->
-        <link href="assets/libs/tiny-slider/tiny-slider.css" rel="stylesheet">
-        <link href="assets/libs/tobii/css/tobii.min.css" rel="stylesheet">
-        <link href="assets/libs/js-datepicker/datepicker.min.css" rel="stylesheet">
-        @@include("partials/head-css.html")
-    </head>
+@@include("partials/body.html")
+@@include("partials/navbar/nav-center-light.html")
 
-    @@include("partials/body.html")
-        
-        @@include("partials/navbar/nav-center-light.html")
-
-        <!-- Start Hero -->
-        <section class="flex md:h-screen py-36 items-center sm:bg-[url('../../assets/images/gallery/exterior/MAIN_PHOTO-min-widened.webp')] bg-[url('../../assets/images/gallery/exterior/20230527_194111-min-narrowed.webp')] bg-no-repeat bg-fixed bg-top bg-cover">
-<!--            <div class="absolute inset-0 bg-black opacity-30"></div>-->
-<!--                <div class="absolute inset-0 ltr:md:bg-gradient-to-b rtl:md:bg-gradient-to-b md:from-black md:via-black/10 md:bg-black/10 bg-black/70 z-2"></div>-->
-                <div class="absolute inset-0 md:bg-gradient-to-b from-main-green from-0% to-10%"></div>
-            <div class="container">
-                <div class="grid grid-cols-1 justify-center text-center">
-                    <div class="">
-<!--                        <h1 class="font-bold lg:leading-normal leading-normal text-4xl lg:text-6xl text-white mb-5"><br> Welcome!</h1>-->
-<!--                        <p class="text-white/70 text-lg max-w-xl mx-auto">Beatae cum eius, animi itaque aliquid ducimus facere dicta, vitae ipsam maiores nam sit blanditiis, quisquam expedita?</p>-->
-                    
-                        <div class="mt-8">
-                            <!-- <a href="#table" class="btn bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md"><i class="uil uil-restaurant"></i> Book A Table</a> -->
-                        </div>
-                    </div>
+<section
+        class="flex md:h-screen py-36 items-center sm:bg-[url('../../assets/images/gallery/exterior/MAIN_PHOTO-min-widened.webp')] bg-[url('../../assets/images/gallery/exterior/20230527_194111-min-narrowed.webp')] bg-no-repeat bg-fixed bg-top bg-cover">
+    <div class="absolute inset-0 md:bg-gradient-to-b from-main-green from-0% to-10%"></div>
+    <div class="container">
+        <div class="grid grid-cols-1 justify-center text-center">
+            <div class="">
+                <div class="mt-8">
                 </div>
-            </div><!--end container-->
-        </section><!--end section-->
-        <!-- End Hero -->
-
-        <!-- Start Section-->
-        <section class="relative md:py-24 py-16 bg-background-light">
-            <div class="container">
-                <div class="grid md:grid-cols-12 grid-cols-1 items-center gap-[30px]">
-                    <div class="lg:col-span-5 md:col-span-6">
-                        <img src="assets/images/gallery/exterior/6. Pool sunset view-min.jpg" class="rounded-md shadow dark:shadow-gray-800" alt="">
-                    </div>
-
-                    <div class="lg:col-span-7 md:col-span-6">
-                        <div class="ms-6">
-<!--                            <p class="text-slate-500 text-lg mb-0">The phrasal sequence of the Lorem Ipsum text is now so widespread and commonplace that many DTP programmes can generate dummy text using the starting sequence "Lorem ipsum".</p>-->
-<!--                        -->
-<!--                            <h4 class="my-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Food is our common ground, <br> a universal experience.</h4>-->
-
-<!--                            <p class="text-slate-500">Fortunately, the phrase 'Lorem Ipsum' is now recognized by electronic pre-press systems and, when found, an alarm can be raised. This avoids a publication going to print with overlooked dummy text.</p>-->
-                        <p>
-                            In today’s modern lifestyle, holidays are meant a lot. Embracing the principles of Greek hospitality, Villa Donna at Kyparissia Gulf in Messinia Peloponnese offers a private heaven of rest, full of stunning sea views, unique sunsets and amenities. It is the ideal destination for the ones who love to relax in privacy and peacefulness.                         </p>
-<!--                            <div class="mt-6">-->
-<!--                                &lt;!&ndash; <img src="assets/images/sign.png" alt=""> &ndash;&gt;-->
-<!--                                <span class="italic">Sotiris - Ifigeneia</span>-->
-<!--                            </div>-->
-                        </div>
-                    </div>
-                </div><!--grid-->
-            </div><!--end container-->
-
-
-        </section><!--end section-->
-        <!-- End Section-->
-
-        <!-- Start -->
-        <section class="relative py-36 bg-[url('../../assets/images/gallery/exterior/20230527_194853-min.jpg')] bg-no-repeat bg-fixed bg-top bg-cover">
-            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-black/50 to-black"></div>
-            <div class="absolute bottom-0 start-0 end-0 text-center px-3">
-<!--                <h5 class="text-slate-500 text-xl leading-normal font-semibold">Lorem, ipsum.</h5>-->
-<!--                <h4 class="md:text-3xl text-2xl md:leading-normal leading-normal font-semibold text-white mb-5">Lorem ipsum dolor sit ametsssssssssssssss.</h4>-->
             </div>
-        </section>
-        <!--end section-->
-        <!-- End -->
+        </div>
+    </div>
+</section>
 
-<!--        &lt;!&ndash; Start &ndash;&gt;-->
-<!--        <section class=" bg-gold-1 relative md:py-24 py-16 md:pt-12 bg-[url('../../assets/images/food/food-menu.png')] bg-no-repeat bg-top bg-cover bg-background-light">-->
+<section class="relative md:py-24 py-16 bg-background-light">
+    <div class="container">
+        <div class="grid md:grid-cols-12 grid-cols-1 items-center gap-[30px]">
+            <div class="lg:col-span-5 md:col-span-6">
+                <img src="assets/images/gallery/exterior/6. Pool sunset view-min.jpg"
+                     class="rounded-md shadow dark:shadow-gray-800" alt="">
+            </div>
 
-<!--            </div>&lt;!&ndash;end container&ndash;&gt;-->
-
-<!--            <div class="container mt-8 bg-back">   -->
-<!--                <div class="container md:mt-24 mt-16">-->
-<!--                    <div class="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 mt-6 gap-[30px]">-->
-<!--                        <div class="md:px-6 transition duration-500 rounded-2xl text-center">-->
-<!--                            <div class="w-20 h-20 bg-indigo-600/5 mx-auto text-indigo-600 rounded-xl text-3xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800">-->
-<!--                                <i class="uil uil-pizza-slice"></i>-->
-<!--                            </div>-->
-<!--    -->
-<!--                            <div class="content mt-7">-->
-<!--                                <a href="page-services.html" class="title h5 text-lg font-medium hover:text-indigo-600">Food Meets Style</a>-->
-<!--                                <p class="text-slate-500 mt-3">The phrasal sequence of the is now so that many campaign and benefit</p>-->
-<!--                                -->
-<!--                                <div class="mt-5">-->
-<!--                                    <a href="page-services.html" class="btn btn-link text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out">Read More <i class="uil uil-arrow-right"></i></a>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--    -->
-<!--                        <div class="md:px-6 transition duration-500 rounded-2xl text-center">-->
-<!--                            <div class="w-20 h-20 bg-indigo-600/5 mx-auto text-indigo-600 rounded-xl text-3xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800">-->
-<!--                                <i class="uil uil-restaurant"></i>-->
-<!--                            </div>-->
-<!--    -->
-<!--                            <div class="content mt-7">-->
-<!--                                <a href="page-services.html" class="title h5 text-lg font-medium hover:text-indigo-600">Quality Check</a>-->
-<!--                                <p class="text-slate-500 mt-3">The phrasal sequence of the is now so that many campaign and benefit</p>-->
-<!--                                -->
-<!--                                <div class="mt-5">-->
-<!--                                    <a href="page-services.html" class="btn btn-link text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out">Read More <i class="uil uil-arrow-right"></i></a>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--    -->
-<!--                        <div class="md:px-6 transition duration-500 rounded-2xl text-center">-->
-<!--                            <div class="w-20 h-20 bg-indigo-600/5 mx-auto text-indigo-600 rounded-xl text-3xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800">-->
-<!--                                <i class="uil uil-swiggy"></i>-->
-<!--                            </div>-->
-<!--    -->
-<!--                            <div class="content mt-7">-->
-<!--                                <a href="page-services.html" class="title h5 text-lg font-medium hover:text-indigo-600">Home Delivery</a>-->
-<!--                                <p class="text-slate-500 mt-3">The phrasal sequence of the is now so that many campaign and benefit</p>-->
-<!--                                -->
-<!--                                <div class="mt-5">-->
-<!--                                    <a href="page-services.html" class="btn btn-link text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out">Read More <i class="uil uil-arrow-right"></i></a>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>&lt;!&ndash;end container&ndash;&gt;-->
-<!--        </section>&lt;!&ndash;end section&ndash;&gt;-->
-<!--        &lt;!&ndash; End &ndash;&gt;-->
+            <div class="lg:col-span-7 md:col-span-6">
+                <div class="ms-6">
+                    <p>
+                        In today’s modern lifestyle, holidays are meant a lot. Embracing the principles of Greek
+                        hospitality, Villa Donna at Kyparissia Gulf in Messinia Peloponnese offers a private heaven of
+                        rest, full of stunning sea views, unique sunsets and amenities. It is the ideal destination for
+                        the ones who love to relax in privacy and peacefulness. </p>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
+</section>
+<section
+        class="relative py-36 bg-[url('../../assets/images/gallery/exterior/20230527_194853-min.jpg')] bg-no-repeat bg-fixed bg-top bg-cover">
+    <div class="absolute inset-0 bg-gradient-to-b from-transparent via-black/50 to-black"></div>
+    <div class="absolute bottom-0 start-0 end-0 text-center px-3">
+    </div>
+</section>
 
-        @@include("partials/footer/villadonna-footer.html")
+@@include("partials/footer/villadonna-footer.html")
 
-        <!-- @@include("partials/cookies.html") -->
+<a href="#" onclick="topFunction()" id="back-to-top"
+   class="back-to-top fixed hidden text-lg rounded-full z-10 bottom-5 end-5 h-9 w-9 text-center bg-gold-1 text-white leading-9"><i
+        class="uil uil-arrow-up"></i></a>
 
-        <!-- Back to top -->
-        <a href="#" onclick="topFunction()" id="back-to-top" class="back-to-top fixed hidden text-lg rounded-full z-10 bottom-5 end-5 h-9 w-9 text-center bg-gold-1 text-white leading-9"><i class="uil uil-arrow-up"></i></a>
-        <!-- Back to top -->
-
-        <!-- JAVASCRIPTS -->
-        <script src="assets/libs/tiny-slider/min/tiny-slider.js"></script>
-        <script src="assets/libs/tobii/js/tobii.min.js"></script>
-        <script src="assets/libs/shufflejs/shuffle.min.js"></script>
-        <script src="assets/libs/js-datepicker/datepicker.min.js"></script>
-        <script src="assets/libs/feather-icons/feather.min.js"></script>
-        <script src="assets/js/plugins.init.js"></script>
-        @@include("partials/script-file.html")
-        <!-- JAVASCRIPTS -->
-    </body>
+<script src="assets/libs/tiny-slider/min/tiny-slider.js"></script>
+<script src="assets/libs/tobii/js/tobii.min.js"></script>
+<script src="assets/libs/shufflejs/shuffle.min.js"></script>
+<script src="assets/libs/js-datepicker/datepicker.min.js"></script>
+<script src="assets/libs/feather-icons/feather.min.js"></script>
+<script src="assets/js/plugins.init.js"></script>
+@@include("partials/script-file.html")
+</body>
 </html>

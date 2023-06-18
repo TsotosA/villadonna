@@ -1,1065 +1,554 @@
 @@include("partials/main.html")
-    <head>
-        @@include("partials/title-meta.html", {"title": "Amenities"})
+<head>
+    @@include("partials/title-meta.html", {"title": "Amenities"})
 
-        <!-- Css -->
-        <link href="assets/libs/tiny-slider/tiny-slider.css" rel="stylesheet">
-        <link href="assets/libs/tobii/css/tobii.min.css" rel="stylesheet">
-        @@include("partials/head-css.html")
-    </head>
-    
-    @@include("partials/body.html")
-        
-        @@include("partials/navbar/nav-center-light.html")
+    <!-- Css -->
+    <link href="assets/libs/tiny-slider/tiny-slider.css" rel="stylesheet">
+    <link href="assets/libs/tobii/css/tobii.min.css" rel="stylesheet">
+    @@include("partials/head-css.html")
+</head>
+
+@@include("partials/body.html")
+
+@@include("partials/navbar/nav-center-light.html")
 <div class="absolute inset-0 md:bg-gradient-to-b from-main-green from-0% to-10%"></div>
 
-        <!-- Start Hero -->
-        <section id="controls-carousel" class="relative" data-carousel="static">
-            <div class="overflow-hidden relative h-screen inset-0">
-                <div class="flex items-center justify-center transition-all duration-700 ease-in-out" data-carousel-item="active">
-                    <div class="image-wrap absolute inset-0 -top-[350px] -bottom-[350px] -start-[100px] -end-[100px] min-w-full w-auto min-h-full h-auto overflow-hidden m-auto z-1 bg-[url('../../assets/images/gallery/exterior/20230527_205353-min.jpg')] bg-top bg-no-repeat bg-cover"></div>
-<!--                    <div class="absolute inset-0 ltr:md:bg-gradient-to-r rtl:md:bg-gradient-to-l md:from-black md:via-black/80 md:bg-black/20 bg-black/70 z-2"></div>-->
-<!--                    <div class="container z-3">-->
-<!--                        <div class="grid grid-cols-1 mt-10">-->
-<!--                            <div class="ltr:md:text-left rtl:md:text-right text-center">-->
-<!--                                <h1 class="font-bold text-white lg:leading-normal leading-normal text-4xl lg:text-5xl mb-6">Take Care of Your Future</h1>-->
-<!--                                <p class="text-white/70 text-lg max-w-xl">Launch your campaign and benefit from our expertise on designing and managing conversion centered Tailwind CSS v3.x html page.</p>-->
-<!--                                -->
-<!--                                <div class="mt-8">-->
-<!--                                    <a href="" class="btn bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md">Contact us</a>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>&lt;!&ndash;end grid&ndash;&gt;-->
-<!--                    </div>&lt;!&ndash;end container&ndash;&gt;-->
-                </div>
+<section id="controls-carousel" class="relative" data-carousel="static">
+    <div class="overflow-hidden relative h-screen inset-0">
+        <div class="flex items-center justify-center transition-all duration-700 ease-in-out"
+             data-carousel-item="active">
+            <div class="image-wrap absolute inset-0 -top-[350px] -bottom-[350px] -start-[100px] -end-[100px] min-w-full w-auto min-h-full h-auto overflow-hidden m-auto z-1 bg-[url('../../assets/images/gallery/exterior/20230527_205353-min.jpg')] bg-top bg-no-repeat bg-cover"></div>
+        </div>
 
-                <div class="flex items-center justify-center transition-all duration-700 ease-in-out" data-carousel-item="">
-                    <div class="absolute inset-0 image-wrap z-1 bg-[url('../../assets/images/gallery/interior/Kitchen-6-min.jpg')] bg-top bg-no-repeat bg-cover"></div>
-<!--                    <div class="absolute inset-0 md:bg-gradient-to-b md:from-transparent md:to-black md:bg-black/20 bg-black/70 z-2"></div>-->
-<!--                    <div class="container z-3">-->
-<!--                        <div class="grid grid-cols-1 mt-10">-->
-<!--                            <div class="text-center">-->
-<!--                                <h1 class="font-bold text-white lg:leading-normal leading-normal text-4xl lg:text-5xl mb-6">Let's Start With Techwind</h1>-->
-<!--                                <p class="text-white/70 text-lg max-w-xl mx-auto">Launch your campaign and benefit from our expertise on designing and managing conversion centered Tailwind CSS v3.x html page.</p>-->
-<!--                                -->
-<!--                                <div class="mt-8">-->
-<!--                                    <a href="" class="btn bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md">See Services</a>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>&lt;!&ndash;end grid&ndash;&gt;-->
-<!--                    </div>&lt;!&ndash;end container&ndash;&gt;-->
-                </div>
+        <div class="flex items-center justify-center transition-all duration-700 ease-in-out" data-carousel-item="">
+            <div class="absolute inset-0 image-wrap z-1 bg-[url('../../assets/images/gallery/interior/Kitchen-6-min.jpg')] bg-top bg-no-repeat bg-cover"></div>
+        </div>
 
-                <div class="flex items-center justify-center transition-all duration-700 ease-in-out" data-carousel-item="">
-                    <div class="absolute inset-0 image-wrap z-1 bg-[url('../../assets/images/gallery/interior/Room-min.jpg')] bg-top bg-no-repeat bg-cover"></div>
-<!--                    <div class="absolute inset-0 ltr:md:bg-gradient-to-l rtl:md:bg-gradient-to-r md:from-black md:via-black/80 md:bg-black/20 bg-black/70 z-2"></div>-->
-<!--                    <div class="container z-3">-->
-<!--                        <div class="grid grid-cols-1 mt-10">-->
-<!--                            <div class="md:text-right text-center">-->
-<!--                                <h1 class="font-bold text-white lg:leading-normal leading-normal text-4xl lg:text-5xl mb-6">Build and Grow Your Business</h1>-->
-<!--                                <p class="text-white/70 text-lg max-w-xl md:ms-auto">Launch your campaign and benefit from our expertise on designing and managing conversion centered Tailwind CSS v3.x html page.</p>-->
-<!--                                -->
-<!--                                <div class="mt-8">-->
-<!--                                    <a href="" class="btn bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md">Pricing Plans</a>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>&lt;!&ndash;end grid&ndash;&gt;-->
-<!--                    </div>&lt;!&ndash;end container&ndash;&gt;-->
-                </div>
-            </div>
+        <div class="flex items-center justify-center transition-all duration-700 ease-in-out" data-carousel-item="">
+            <div class="absolute inset-0 image-wrap z-1 bg-[url('../../assets/images/gallery/interior/Room-min.jpg')] bg-top bg-no-repeat bg-cover"></div>
+        </div>
+    </div>
 
-            <button type="button" class="flex absolute top-0 start-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-prev="">
+    <button type="button"
+            class="flex absolute top-0 start-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+            data-carousel-prev="">
                 <span class="inline-flex justify-center items-center w-8 h-8 rounded-full border border-white hover:border-indigo-600 hover:bg-indigo-600 group-focus:outline-none">
-                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M15 19l-7-7 7-7"></path>
                     </svg>
                     <span class="hidden">Previous</span>
                 </span>
-            </button>
-            <button type="button" class="flex absolute top-0 end-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-next="">
+    </button>
+    <button type="button"
+            class="flex absolute top-0 end-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+            data-carousel-next="">
                 <span class="inline-flex justify-center items-center w-8 h-8 rounded-full border border-white hover:border-indigo-600 hover:bg-indigo-600 group-focus:outline-none">
-                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                         xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
                     </svg>
                     <span class="hidden">Next</span>
                 </span>
-            </button>
-        </section><!--end section-->
-        <!-- End Hero -->
+    </button>
+</section>
 
-        <!-- Start -->
-        <section class="relative py-16">
+<section class="relative py-16">
+    <div class="container md:mt-24 mt-16">
+        <div class="grid grid-cols-1 pb-8 text-center">
+            <h3 class="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">Villa Donna</h3>
+            <p class="text-slate-400 mx-auto text-justify">Villa Donna is a fenced estate offering exclusivity to its
+                guests with 500 sq.m. of garden, a 50 sq.m. private heated pool and secure parking spots. At the pool
+                level, a private residence of 100 sq.m. offers two cosy bedrooms, a spacious living room with a
+                comfortable sofabed, large openings, a covered porch, a fully equipped kitchen, an ethanol fireplace,
+                Smart TV in all rooms, a bathroom with a bathtub and a WC with a shower, all elegantly furnished.
+            <p class="text-slate-400 mx-auto text-justify">This home-like charming Villa, located only 5 min away from
+                the local market, the old town
+                and beautiful sandy beaches, can comfortably accommodate 4 people, with a max capacity of
+                6.</p>
+            <p class="text-slate-400 mx-auto text-justify">Kyparissia is 245km northwest of Athens (2h 50 min), 46km
+                northwest of Kalamata Airport (45
+                min), 130km southeast of Araxos Airport (1h 30 min) and 150km southeast of Patras Harbor.
+                It is a bay of the Ionian Sea and one of the main breeding grounds of the endangered
+                loggerhead sea turtle (kareta-kareta).</p>
+        </div>
 
-            <div class="container md:mt-24 mt-16">
-                <div class="grid grid-cols-1 pb-8 text-center">
-<!--                    <h6 class="text-indigo-600 text-sm font-bold uppercase mb-2">Who We Are ?</h6>-->
-                    <h3 class="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">Villa Donna</h3>
+    </div>
+</section>
 
-                    <p class="text-slate-400 mx-auto text-justify">Villa Donna is a fenced estate offering exclusivity to its guests with 500 sq.m. of garden, a 50 sq.m. private heated pool and secure parking spots. At the pool level, a private residence of 100 sq.m. offers two cosy bedrooms, a spacious living room with a comfortable sofabed, large openings, a covered porch, a fully equipped kitchen, an ethanol fireplace, Smart TV in all rooms, a bathroom with a bathtub and a WC with a shower, all elegantly furnished.
+<section
+        class="py-20 w-full table relative bg-[url('../../assets/images/gallery/area/20230526_204155.jpg')] bg-center bg-no-repeat bg-cover">
+    <div class="container relative">
+        <div class="grid grid-cols-1 text-center">
+        </div>
+    </div>
+</section>
 
-                    <p class="text-slate-400 mx-auto text-justify">This home-like charming Villa, located only 5 min away from the local market, the old town
-                        and beautiful sandy beaches, can comfortably accommodate 4 people, with a max capacity of
-                        6.</p>
-
-                        <p class="text-slate-400 mx-auto text-justify">Kyparissia is 245km northwest of Athens (2h 50 min), 46km northwest of Kalamata Airport (45
-                            min), 130km southeast of Araxos Airport (1h 30 min) and 150km southeast of Patras Harbor.
-                            It is a bay of the Ionian Sea and one of the main breeding grounds of the endangered
-                            loggerhead sea turtle (kareta-kareta).</p>
-                </div><!--end grid-->
-
-
-
-
-
-
-            </div><!--end container-->
-        </section><!--end section-->
-        <!-- End -->
-
-        <!-- Start -->
-        <section class="py-20 w-full table relative bg-[url('../../assets/images/gallery/area/20230526_204155.jpg')] bg-center bg-no-repeat bg-cover">
-<!--            <div class="absolute inset-0 bg-slate-900/20"></div>-->
-            <div class="container relative">
-                <div class="grid grid-cols-1 text-center">
-<!--                    <h3 class="mb-4 md:text-3xl text-2xl text-white font-medium">Stop leaving money on the table.</h3>-->
-
-<!--                    <p class="text-white/80 max-w-xl mx-auto">Start working with Techwind that can provide everything you need to generate awareness, drive traffic, connect.</p>-->
-<!--                -->
-<!--                    <a href="#!" data-type="youtube" data-id="yba7hPeTSjk" class="lightbox h-20 w-20 rounded-full shadow-lg dark:shadow-gray-800 inline-flex items-center justify-center bg-white dark:bg-slate-900 text-indigo-600 mx-auto mt-10">-->
-<!--                        <i class="mdi mdi-play inline-flex items-center justify-center text-2xl"></i>-->
-<!--                    </a>-->
-                </div><!--end grid-->
-            </div><!--end container-->
-        </section><!--end section-->
-        <!-- End -->
-
-        <!-- Start Section-->
-        <section class="relative py-16">
-
-            <div class="container md:mt-24 mt-16">
-<!--                <div class="grid md:grid-cols-12 grid-cols-1 items-center">-->
-<!--                    <div class="md:col-span-6">-->
-<!--                        <h6 class="text-indigo-600 text-sm font-bold uppercase mb-2">Amenities</h6>-->
-<!--                        <h3 class="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">Reads Our Latest <br> News & Blog</h3>-->
-<!--                    </div>-->
-
-<!--                    <div class="md:col-span-6">-->
-<!--                        <p class="text-slate-400 max-w-xl">Start working with Techwind that can provide everything you need to generate awareness, drive traffic, connect.</p>-->
-<!--                    </div>-->
-<!--                </div>&lt;!&ndash;end grid&ndash;&gt;-->
-
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-[30px]">
-                    <div class="blog relative rounded-md shadow dark:shadow-gray-800 overflow-hidden">
-                        <img src="assets/images/blog/01.jpg" alt="">
-                        <div class="content">
-<!--                            <h2 class="mb-2 text-lg font-semibold text-gray-900 dark:text-white">Password-->
-<!--                                requirements:</h2>-->
-                            <ul class="max-w-md space-y-1 text-gray-500 list-inside dark:text-gray-400">
-                                <li class="flex items-center">
-                                    <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
-                                         fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd"
-                                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                              clip-rule="evenodd"></path>
-                                    </svg>
-                                    Heated pool from April to October
-                                </li>
-                                <li class="flex items-center">
-                                    <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
-                                         fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd"
-                                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                              clip-rule="evenodd"></path>
-                                    </svg>
-                                    Sunbeds, Shezlongs, rocking chair
-                                </li>
-                                <li class="flex items-center">
-                                    <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
-                                         fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd"
-                                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                              clip-rule="evenodd"></path>
-                                    </svg>
-                                    Outdoor shower
-                                </li>
-                                <li class="flex items-center">
-                                    <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
-                                         fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd"
-                                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                              clip-rule="evenodd"></path>
-                                    </svg>
-                                    Outdoor dining table
-                                </li>
-                                <li class="flex items-center">
-                                    <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
-                                         fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd"
-                                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                              clip-rule="evenodd"></path>
-                                    </svg>
-                                    Outdoor relax chairs
-                                </li>
-                                <li class="flex items-center">
-                                    <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
-                                         fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd"
-                                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                              clip-rule="evenodd"></path>
-                                    </svg>
-                                    Free Wifi
-                                </li>
-                                <li class="flex items-center">
-                                    <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
-                                         fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd"
-                                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                              clip-rule="evenodd"></path>
-                                    </svg>
-                                    Free parking
-                                </li>
-                                <li class="flex items-center">
-                                    <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
-                                         fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd"
-                                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                              clip-rule="evenodd"></path>
-                                    </svg>
-                                    A/C in every room
-                                </li>
-                                <li class="flex items-center">
-                                    <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
-                                         fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd"
-                                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                              clip-rule="evenodd"></path>
-                                    </svg>
-                                    Smart TV in all rooms
-                                </li>
-                                <li class="flex items-center">
-                                    <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
-                                         fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd"
-                                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                              clip-rule="evenodd"></path>
-                                    </svg>
-                                    Heat panels in every room (October-April)
-                                </li>
-                                <li class="flex items-center">
-                                    <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
-                                         fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd"
-                                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                              clip-rule="evenodd"></path>
-                                    </svg>
-                                    Indoor Ethanol fireplace (October to April)
-                                </li>
-                                <li class="flex items-center">
-                                    <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
-                                         fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd"
-                                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                              clip-rule="evenodd"></path>
-                                    </svg>
-                                    Smoke-detector
-                                </li>
-                                <li class="flex items-center">
-                                    <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
-                                         fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd"
-                                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                              clip-rule="evenodd"></path>
-                                    </svg>
-                                    Fire-extinguisher
-                                </li>
-                                <li class="flex items-center">
-                                    <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
-                                         fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd"
-                                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                              clip-rule="evenodd"></path>
-                                    </svg>
-                                    First Aid Kit
-                                </li>
-                                <li class="flex items-center">
-                                    <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
-                                         fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd"
-                                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                              clip-rule="evenodd"></path>
-                                    </svg>
-                                    Fully equipped kitchen (cooking utensils, dishes, glasses, cups, silverware)
-                                </li>
-                                <li class="flex items-center">
-                                    <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
-                                         fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd"
-                                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                              clip-rule="evenodd"></path>
-                                    </svg>
-                                    Kitchen towels
-                                </li>
-                                <li class="flex items-center">
-                                    <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
-                                         fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd"
-                                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                              clip-rule="evenodd"></path>
-                                    </svg>
-                                    Kitchen towels
-                                </li>
-                                <li class="flex items-center">
-                                    <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
-                                         fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd"
-                                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                              clip-rule="evenodd"></path>
-                                    </svg>
-                                    Espresso machine and capsules
-                                </li>
-                                <li class="flex items-center">
-                                    <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
-                                         fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd"
-                                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                              clip-rule="evenodd"></path>
-                                    </svg>
-                                    French coffee machine and filter
-                                </li>
-                                <li class="flex items-center">
-                                    <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
-                                         fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd"
-                                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                              clip-rule="evenodd"></path>
-                                    </svg>
-                                    Sugar, Salt, Pepper, Oil, Vinegar
-                                </li>
-                                <li class="flex items-center">
-                                    <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
-                                         fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd"
-                                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                              clip-rule="evenodd"></path>
-                                    </svg>
-                                    Refrigerator
-                                </li>
-                                <li class="flex items-center">
-                                    <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
-                                         fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd"
-                                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                              clip-rule="evenodd"></path>
-                                    </svg>
-                                    Kitchen with ceramic hob and oven
-                                </li>
-                                <li class="flex items-center">
-                                    <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
-                                         fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd"
-                                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                              clip-rule="evenodd"></path>
-                                    </svg>
-                                    Toaster, Boiler, Juicer, Multi Mixer
-                                </li>
-                                <li class="flex items-center">
-                                    <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
-                                         fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd"
-                                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                              clip-rule="evenodd"></path>
-                                    </svg>
-                                    Microwave
-                                </li>
-<!--                                <li class="flex items-center">-->
-<!--                                    <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"-->
-<!--                                         fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">-->
-<!--                                        <path fill-rule="evenodd"-->
-<!--                                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"-->
-<!--                                              clip-rule="evenodd"></path>-->
-<!--                                    </svg>-->
-<!--                                    Dishwasher-->
-<!--                                </li>-->
-<!--                                <li class="flex items-center">-->
-<!--                                    <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"-->
-<!--                                         fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">-->
-<!--                                        <path fill-rule="evenodd"-->
-<!--                                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"-->
-<!--                                              clip-rule="evenodd"></path>-->
-<!--                                    </svg>-->
-<!--                                    Washing machine with dryer-->
-<!--                                </li>-->
-<!--                                <li class="flex items-center">-->
-<!--                                    <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"-->
-<!--                                         fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">-->
-<!--                                        <path fill-rule="evenodd"-->
-<!--                                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"-->
-<!--                                              clip-rule="evenodd"></path>-->
-<!--                                    </svg>-->
-<!--                                    Detergents-->
-<!--                                </li>-->
-<!--                                <li class="flex items-center">-->
-<!--                                    <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"-->
-<!--                                         fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">-->
-<!--                                        <path fill-rule="evenodd"-->
-<!--                                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"-->
-<!--                                              clip-rule="evenodd"></path>-->
-<!--                                    </svg>-->
-<!--                                    Hair Dryer-->
-<!--                                </li>-->
-<!--                                <li class="flex items-center">-->
-<!--                                    <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"-->
-<!--                                         fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">-->
-<!--                                        <path fill-rule="evenodd"-->
-<!--                                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"-->
-<!--                                              clip-rule="evenodd"></path>-->
-<!--                                    </svg>-->
-<!--                                    Safe Box-->
-<!--                                </li>-->
-<!--                                <li class="flex items-center">-->
-<!--                                    <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"-->
-<!--                                         fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">-->
-<!--                                        <path fill-rule="evenodd"-->
-<!--                                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"-->
-<!--                                              clip-rule="evenodd"></path>-->
-<!--                                    </svg>-->
-<!--                                    Alarm System-->
-<!--                                </li>-->
-<!--                                <li class="flex items-center">-->
-<!--                                    <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"-->
-<!--                                         fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">-->
-<!--                                        <path fill-rule="evenodd"-->
-<!--                                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"-->
-<!--                                              clip-rule="evenodd"></path>-->
-<!--                                    </svg>-->
-<!--                                    Security Door-->
-<!--                                </li>-->
-<!--                                <li class="flex items-center">-->
-<!--                                    <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"-->
-<!--                                         fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">-->
-<!--                                        <path fill-rule="evenodd"-->
-<!--                                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"-->
-<!--                                              clip-rule="evenodd"></path>-->
-<!--                                    </svg>-->
-<!--                                    Thermal Shut-off aluminum frames-->
-<!--                                </li>-->
-<!--                                <li class="flex items-center">-->
-<!--                                    <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"-->
-<!--                                         fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">-->
-<!--                                        <path fill-rule="evenodd"-->
-<!--                                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"-->
-<!--                                              clip-rule="evenodd"></path>-->
-<!--                                    </svg>-->
-<!--                                    Shower-->
-<!--                                </li>-->
-<!--                                <li class="flex items-center">-->
-<!--                                    <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"-->
-<!--                                         fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">-->
-<!--                                        <path fill-rule="evenodd"-->
-<!--                                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"-->
-<!--                                              clip-rule="evenodd"></path>-->
-<!--                                    </svg>-->
-<!--                                    Bathtub-->
-<!--                                </li>-->
-<!--                                <li class="flex items-center">-->
-<!--                                    <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"-->
-<!--                                         fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">-->
-<!--                                        <path fill-rule="evenodd"-->
-<!--                                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"-->
-<!--                                              clip-rule="evenodd"></path>-->
-<!--                                    </svg>-->
-<!--                                    Bidet-->
-<!--                                </li>-->
-<!--                                <li class="flex items-center">-->
-<!--                                    <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"-->
-<!--                                         fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">-->
-<!--                                        <path fill-rule="evenodd"-->
-<!--                                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"-->
-<!--                                              clip-rule="evenodd"></path>-->
-<!--                                    </svg>-->
-<!--                                    Hot water 24/7-->
-<!--                                </li>-->
-<!--                                <li class="flex items-center">-->
-<!--                                    <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"-->
-<!--                                         fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">-->
-<!--                                        <path fill-rule="evenodd"-->
-<!--                                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"-->
-<!--                                              clip-rule="evenodd"></path>-->
-<!--                                    </svg>-->
-<!--                                    Shower Gel, Liquid soap and Shampoo-->
-<!--                                </li>-->
-<!--                                <li class="flex items-center">-->
-<!--                                    <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"-->
-<!--                                         fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">-->
-<!--                                        <path fill-rule="evenodd"-->
-<!--                                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"-->
-<!--                                              clip-rule="evenodd"></path>-->
-<!--                                    </svg>-->
-<!--                                    Toilet paper-->
-<!--                                </li>-->
-<!--                                <li class="flex items-center">-->
-<!--                                    <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"-->
-<!--                                         fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">-->
-<!--                                        <path fill-rule="evenodd"-->
-<!--                                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"-->
-<!--                                              clip-rule="evenodd"></path>-->
-<!--                                    </svg>-->
-<!--                                    Towels-->
-<!--                                </li>-->
-<!--                                <li class="flex items-center">-->
-<!--                                    <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"-->
-<!--                                         fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">-->
-<!--                                        <path fill-rule="evenodd"-->
-<!--                                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"-->
-<!--                                              clip-rule="evenodd"></path>-->
-<!--                                    </svg>-->
-<!--                                    Linens-->
-<!--                                </li>-->
-<!--                                <li class="flex items-center">-->
-<!--                                    <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"-->
-<!--                                         fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">-->
-<!--                                        <path fill-rule="evenodd"-->
-<!--                                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"-->
-<!--                                              clip-rule="evenodd"></path>-->
-<!--                                    </svg>-->
-<!--                                    Hangers-->
-<!--                                </li>-->
-<!--                                <li class="flex items-center">-->
-<!--                                    <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"-->
-<!--                                         fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">-->
-<!--                                        <path fill-rule="evenodd"-->
-<!--                                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"-->
-<!--                                              clip-rule="evenodd"></path>-->
-<!--                                    </svg>-->
-<!--                                    Clothing cabinets with large storage space-->
-<!--                                </li>-->
-<!--                                <li class="flex items-center">-->
-<!--                                    <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"-->
-<!--                                         fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">-->
-<!--                                        <path fill-rule="evenodd"-->
-<!--                                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"-->
-<!--                                              clip-rule="evenodd"></path>-->
-<!--                                    </svg>-->
-<!--                                    Iron & iron board-->
-<!--                                </li>-->
-<!--                                <li class="flex items-center">-->
-<!--                                    <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"-->
-<!--                                         fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">-->
-<!--                                        <path fill-rule="evenodd"-->
-<!--                                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"-->
-<!--                                              clip-rule="evenodd"></path>-->
-<!--                                    </svg>-->
-<!--                                    Drying rack-->
-<!--                                </li>-->
-<!--                                <li class="flex items-center">-->
-<!--                                    <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"-->
-<!--                                         fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">-->
-<!--                                        <path fill-rule="evenodd"-->
-<!--                                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"-->
-<!--                                              clip-rule="evenodd"></path>-->
-<!--                                    </svg>-->
-<!--                                    COCOMAT beds (1.70m x 2.00m) with different type mattress in each room-->
-<!--                                </li>-->
-<!--                                <li class="flex items-center">-->
-<!--                                    <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"-->
-<!--                                         fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">-->
-<!--                                        <path fill-rule="evenodd"-->
-<!--                                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"-->
-<!--                                              clip-rule="evenodd"></path>-->
-<!--                                    </svg>-->
-<!--                                    COCOMAT pillows-->
-<!--                                </li>-->
-<!--                                <li class="flex items-center">-->
-<!--                                    <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"-->
-<!--                                         fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">-->
-<!--                                        <path fill-rule="evenodd"-->
-<!--                                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"-->
-<!--                                              clip-rule="evenodd"></path>-->
-<!--                                    </svg>-->
-<!--                                    Extra pillows-->
-<!--                                </li>-->
-<!--                                <li class="flex items-center">-->
-<!--                                    <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"-->
-<!--                                         fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">-->
-<!--                                        <path fill-rule="evenodd"-->
-<!--                                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"-->
-<!--                                              clip-rule="evenodd"></path>-->
-<!--                                    </svg>-->
-<!--                                    Large Sofabed-->
-<!--                                </li>-->
-<!--                            </ul>-->
+<section class="relative py-16">
+    <div class="container md:mt-24 mt-16">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-[30px]">
+            <div class="blog relative rounded-md shadow dark:shadow-gray-800 overflow-hidden">
+                <img src="assets/images/blog/01.jpg" alt="">
+                <div class="content">
+                    <ul class="max-w-md space-y-1 text-gray-500 list-inside dark:text-gray-400">
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
+                                 fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                      clip-rule="evenodd"></path>
+                            </svg>
+                            Heated pool from April to October
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
+                                 fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                      clip-rule="evenodd"></path>
+                            </svg>
+                            Sunbeds, Shezlongs, rocking chair
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
+                                 fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                      clip-rule="evenodd"></path>
+                            </svg>
+                            Outdoor shower
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
+                                 fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                      clip-rule="evenodd"></path>
+                            </svg>
+                            Outdoor dining table
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
+                                 fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                      clip-rule="evenodd"></path>
+                            </svg>
+                            Outdoor relax chairs
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
+                                 fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                      clip-rule="evenodd"></path>
+                            </svg>
+                            Free Wifi
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
+                                 fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                      clip-rule="evenodd"></path>
+                            </svg>
+                            Free parking
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
+                                 fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                      clip-rule="evenodd"></path>
+                            </svg>
+                            A/C in every room
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
+                                 fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                      clip-rule="evenodd"></path>
+                            </svg>
+                            Smart TV in all rooms
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
+                                 fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                      clip-rule="evenodd"></path>
+                            </svg>
+                            Heat panels in every room (October-April)
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
+                                 fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                      clip-rule="evenodd"></path>
+                            </svg>
+                            Indoor Ethanol fireplace (October to April)
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
+                                 fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                      clip-rule="evenodd"></path>
+                            </svg>
+                            Smoke-detector
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
+                                 fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                      clip-rule="evenodd"></path>
+                            </svg>
+                            Fire-extinguisher
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
+                                 fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                      clip-rule="evenodd"></path>
+                            </svg>
+                            First Aid Kit
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
+                                 fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                      clip-rule="evenodd"></path>
+                            </svg>
+                            Fully equipped kitchen (cooking utensils, dishes, glasses, cups, silverware)
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
+                                 fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                      clip-rule="evenodd"></path>
+                            </svg>
+                            Kitchen towels
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
+                                 fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                      clip-rule="evenodd"></path>
+                            </svg>
+                            Kitchen towels
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
+                                 fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                      clip-rule="evenodd"></path>
+                            </svg>
+                            Espresso machine and capsules
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
+                                 fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                      clip-rule="evenodd"></path>
+                            </svg>
+                            French coffee machine and filter
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
+                                 fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                      clip-rule="evenodd"></path>
+                            </svg>
+                            Sugar, Salt, Pepper, Oil, Vinegar
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
+                                 fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                      clip-rule="evenodd"></path>
+                            </svg>
+                            Refrigerator
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
+                                 fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                      clip-rule="evenodd"></path>
+                            </svg>
+                            Kitchen with ceramic hob and oven
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
+                                 fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                      clip-rule="evenodd"></path>
+                            </svg>
+                            Toaster, Boiler, Juicer, Multi Mixer
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
+                                 fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                      clip-rule="evenodd"></path>
+                            </svg>
+                            Microwave
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="blog relative rounded-md shadow dark:shadow-gray-800 overflow-hidden">
+                <img src="assets/images/blog/01.jpg" alt="">
+                <div class="content">
+                    <ul class="max-w-md space-y-1 text-gray-500 list-inside dark:text-gray-400">
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
+                                 fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                      clip-rule="evenodd"></path>
+                            </svg>
+                            Dishwasher
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
+                                 fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                      clip-rule="evenodd"></path>
+                            </svg>
+                            Washing machine with dryer
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
+                                 fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                      clip-rule="evenodd"></path>
+                            </svg>
+                            Detergents
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
+                                 fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                      clip-rule="evenodd"></path>
+                            </svg>
+                            Hair Dryer
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
+                                 fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                      clip-rule="evenodd"></path>
+                            </svg>
+                            Safe Box
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
+                                 fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                      clip-rule="evenodd"></path>
+                            </svg>
+                            Alarm System
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
+                                 fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                      clip-rule="evenodd"></path>
+                            </svg>
+                            Security Door
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
+                                 fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                      clip-rule="evenodd"></path>
+                            </svg>
+                            Thermal Shut-off aluminum frames
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
+                                 fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                      clip-rule="evenodd"></path>
+                            </svg>
+                            Shower
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
+                                 fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                      clip-rule="evenodd"></path>
+                            </svg>
+                            Bathtub
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
+                                 fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                      clip-rule="evenodd"></path>
+                            </svg>
+                            Bidet
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
+                                 fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                      clip-rule="evenodd"></path>
+                            </svg>
+                            Hot water 24/7
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
+                                 fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                      clip-rule="evenodd"></path>
+                            </svg>
+                            Shower Gel, Liquid soap and Shampoo
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
+                                 fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                      clip-rule="evenodd"></path>
+                            </svg>
+                            Toilet paper
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
+                                 fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                      clip-rule="evenodd"></path>
+                            </svg>
+                            Towels
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
+                                 fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                      clip-rule="evenodd"></path>
+                            </svg>
+                            Linens
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
+                                 fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                      clip-rule="evenodd"></path>
+                            </svg>
+                            Hangers
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
+                                 fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                      clip-rule="evenodd"></path>
+                            </svg>
+                            Clothing cabinets with large storage space
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
+                                 fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                      clip-rule="evenodd"></path>
+                            </svg>
+                            Iron & iron board
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
+                                 fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                      clip-rule="evenodd"></path>
+                            </svg>
+                            Drying rack
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
+                                 fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                      clip-rule="evenodd"></path>
+                            </svg>
+                            COCOMAT beds (1.70m x 2.00m) with different type mattress in each room
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
+                                 fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                      clip-rule="evenodd"></path>
+                            </svg>
+                            COCOMAT pillows
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
+                                 fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                      clip-rule="evenodd"></path>
+                            </svg>
+                            Extra pillows
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
+                                 fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                      clip-rule="evenodd"></path>
+                            </svg>
+                            Large Sofabed
+                        </li>
+                    </ul>
+                </div>
+            </div>
 
 
-                        </div>
-                    </div>
-                    <div class="blog relative rounded-md shadow dark:shadow-gray-800 overflow-hidden">
-                        <img src="assets/images/blog/01.jpg" alt="">
+        </div>
+    </div>
+</section>
 
-                        <div class="content">
+@@include("partials/footer/villadonna-footer.html")
 
+<a href="#" onclick="topFunction()" id="back-to-top"
+   class="back-to-top fixed hidden text-lg rounded-full z-10 bottom-5 end-5 h-9 w-9 text-center bg-gold-1 text-white leading-9"><i
+        class="uil uil-arrow-up"></i></a>
 
-<!--                            <h2 class="mb-2 text-lg font-semibold text-gray-900 dark:text-white">PasswordPassword-->
-<!--                                requirements:</h2>-->
-                            <ul class="max-w-md space-y-1 text-gray-500 list-inside dark:text-gray-400">
-<!--                                <li class="flex items-center">-->
-<!--                                    <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"-->
-<!--                                         fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">-->
-<!--                                        <path fill-rule="evenodd"-->
-<!--                                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"-->
-<!--                                              clip-rule="evenodd"></path>-->
-<!--                                    </svg>-->
-<!--                                    Heated pool from April to October-->
-<!--                                </li>-->
-<!--                                <li class="flex items-center">-->
-<!--                                    <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"-->
-<!--                                         fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">-->
-<!--                                        <path fill-rule="evenodd"-->
-<!--                                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"-->
-<!--                                              clip-rule="evenodd"></path>-->
-<!--                                    </svg>-->
-<!--                                    Sunbeds, Shezlongs, rocking chair-->
-<!--                                </li>-->
-<!--                                <li class="flex items-center">-->
-<!--                                    <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"-->
-<!--                                         fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">-->
-<!--                                        <path fill-rule="evenodd"-->
-<!--                                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"-->
-<!--                                              clip-rule="evenodd"></path>-->
-<!--                                    </svg>-->
-<!--                                    Outdoor shower-->
-<!--                                </li>-->
-<!--                                <li class="flex items-center">-->
-<!--                                    <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"-->
-<!--                                         fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">-->
-<!--                                        <path fill-rule="evenodd"-->
-<!--                                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"-->
-<!--                                              clip-rule="evenodd"></path>-->
-<!--                                    </svg>-->
-<!--                                    Outdoor dining table-->
-<!--                                </li>-->
-<!--                                <li class="flex items-center">-->
-<!--                                    <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"-->
-<!--                                         fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">-->
-<!--                                        <path fill-rule="evenodd"-->
-<!--                                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"-->
-<!--                                              clip-rule="evenodd"></path>-->
-<!--                                    </svg>-->
-<!--                                    Outdoor relax chairs-->
-<!--                                </li>-->
-<!--                                <li class="flex items-center">-->
-<!--                                    <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"-->
-<!--                                         fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">-->
-<!--                                        <path fill-rule="evenodd"-->
-<!--                                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"-->
-<!--                                              clip-rule="evenodd"></path>-->
-<!--                                    </svg>-->
-<!--                                    Free Wifi-->
-<!--                                </li>-->
-<!--                                <li class="flex items-center">-->
-<!--                                    <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"-->
-<!--                                         fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">-->
-<!--                                        <path fill-rule="evenodd"-->
-<!--                                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"-->
-<!--                                              clip-rule="evenodd"></path>-->
-<!--                                    </svg>-->
-<!--                                    Free parking-->
-<!--                                </li>-->
-<!--                                <li class="flex items-center">-->
-<!--                                    <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"-->
-<!--                                         fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">-->
-<!--                                        <path fill-rule="evenodd"-->
-<!--                                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"-->
-<!--                                              clip-rule="evenodd"></path>-->
-<!--                                    </svg>-->
-<!--                                    A/C in every room-->
-<!--                                </li>-->
-<!--                                <li class="flex items-center">-->
-<!--                                    <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"-->
-<!--                                         fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">-->
-<!--                                        <path fill-rule="evenodd"-->
-<!--                                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"-->
-<!--                                              clip-rule="evenodd"></path>-->
-<!--                                    </svg>-->
-<!--                                    Smart TV in all rooms-->
-<!--                                </li>-->
-<!--                                <li class="flex items-center">-->
-<!--                                    <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"-->
-<!--                                         fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">-->
-<!--                                        <path fill-rule="evenodd"-->
-<!--                                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"-->
-<!--                                              clip-rule="evenodd"></path>-->
-<!--                                    </svg>-->
-<!--                                    Heat panels in every room (October-April)-->
-<!--                                </li>-->
-<!--                                <li class="flex items-center">-->
-<!--                                    <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"-->
-<!--                                         fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">-->
-<!--                                        <path fill-rule="evenodd"-->
-<!--                                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"-->
-<!--                                              clip-rule="evenodd"></path>-->
-<!--                                    </svg>-->
-<!--                                    Indoor Ethanol fireplace (October to April)-->
-<!--                                </li>-->
-<!--                                <li class="flex items-center">-->
-<!--                                    <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"-->
-<!--                                         fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">-->
-<!--                                        <path fill-rule="evenodd"-->
-<!--                                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"-->
-<!--                                              clip-rule="evenodd"></path>-->
-<!--                                    </svg>-->
-<!--                                    Smoke-detector-->
-<!--                                </li>-->
-<!--                                <li class="flex items-center">-->
-<!--                                    <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"-->
-<!--                                         fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">-->
-<!--                                        <path fill-rule="evenodd"-->
-<!--                                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"-->
-<!--                                              clip-rule="evenodd"></path>-->
-<!--                                    </svg>-->
-<!--                                    Fire-extinguisher-->
-<!--                                </li>-->
-<!--                                <li class="flex items-center">-->
-<!--                                    <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"-->
-<!--                                         fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">-->
-<!--                                        <path fill-rule="evenodd"-->
-<!--                                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"-->
-<!--                                              clip-rule="evenodd"></path>-->
-<!--                                    </svg>-->
-<!--                                    First Aid Kit-->
-<!--                                </li>-->
-<!--                                <li class="flex items-center">-->
-<!--                                    <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"-->
-<!--                                         fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">-->
-<!--                                        <path fill-rule="evenodd"-->
-<!--                                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"-->
-<!--                                              clip-rule="evenodd"></path>-->
-<!--                                    </svg>-->
-<!--                                    Fully equipped kitchen (cooking utensils, dishes, glasses, cups, silverware)-->
-<!--                                </li>-->
-<!--                                <li class="flex items-center">-->
-<!--                                    <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"-->
-<!--                                         fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">-->
-<!--                                        <path fill-rule="evenodd"-->
-<!--                                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"-->
-<!--                                              clip-rule="evenodd"></path>-->
-<!--                                    </svg>-->
-<!--                                    Kitchen towels-->
-<!--                                </li>-->
-<!--                                <li class="flex items-center">-->
-<!--                                    <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"-->
-<!--                                         fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">-->
-<!--                                        <path fill-rule="evenodd"-->
-<!--                                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"-->
-<!--                                              clip-rule="evenodd"></path>-->
-<!--                                    </svg>-->
-<!--                                    Kitchen towels-->
-<!--                                </li>-->
-<!--                                <li class="flex items-center">-->
-<!--                                    <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"-->
-<!--                                         fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">-->
-<!--                                        <path fill-rule="evenodd"-->
-<!--                                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"-->
-<!--                                              clip-rule="evenodd"></path>-->
-<!--                                    </svg>-->
-<!--                                    Espresso machine and capsules-->
-<!--                                </li>-->
-<!--                                <li class="flex items-center">-->
-<!--                                    <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"-->
-<!--                                         fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">-->
-<!--                                        <path fill-rule="evenodd"-->
-<!--                                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"-->
-<!--                                              clip-rule="evenodd"></path>-->
-<!--                                    </svg>-->
-<!--                                    French coffee machine and filter-->
-<!--                                </li>-->
-<!--                                <li class="flex items-center">-->
-<!--                                    <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"-->
-<!--                                         fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">-->
-<!--                                        <path fill-rule="evenodd"-->
-<!--                                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"-->
-<!--                                              clip-rule="evenodd"></path>-->
-<!--                                    </svg>-->
-<!--                                    Sugar, Salt, Pepper, Oil, Vinegar-->
-<!--                                </li>-->
-<!--                                <li class="flex items-center">-->
-<!--                                    <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"-->
-<!--                                         fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">-->
-<!--                                        <path fill-rule="evenodd"-->
-<!--                                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"-->
-<!--                                              clip-rule="evenodd"></path>-->
-<!--                                    </svg>-->
-<!--                                    Refrigerator-->
-<!--                                </li>-->
-<!--                                <li class="flex items-center">-->
-<!--                                    <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"-->
-<!--                                         fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">-->
-<!--                                        <path fill-rule="evenodd"-->
-<!--                                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"-->
-<!--                                              clip-rule="evenodd"></path>-->
-<!--                                    </svg>-->
-<!--                                    Kitchen with ceramic hob and oven-->
-<!--                                </li>-->
-<!--                                <li class="flex items-center">-->
-<!--                                    <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"-->
-<!--                                         fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">-->
-<!--                                        <path fill-rule="evenodd"-->
-<!--                                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"-->
-<!--                                              clip-rule="evenodd"></path>-->
-<!--                                    </svg>-->
-<!--                                    Toaster, Boiler, Juicer, Multi Mixer-->
-<!--                                </li>-->
-<!--                                <li class="flex items-center">-->
-<!--                                    <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"-->
-<!--                                         fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">-->
-<!--                                        <path fill-rule="evenodd"-->
-<!--                                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"-->
-<!--                                              clip-rule="evenodd"></path>-->
-<!--                                    </svg>-->
-<!--                                    Microwave-->
-<!--                                </li>-->
-                                <li class="flex items-center">
-                                    <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
-                                         fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd"
-                                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                              clip-rule="evenodd"></path>
-                                    </svg>
-                                    Dishwasher
-                                </li>
-                                <li class="flex items-center">
-                                    <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
-                                         fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd"
-                                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                              clip-rule="evenodd"></path>
-                                    </svg>
-                                    Washing machine with dryer
-                                </li>
-                                <li class="flex items-center">
-                                    <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
-                                         fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd"
-                                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                              clip-rule="evenodd"></path>
-                                    </svg>
-                                    Detergents
-                                </li>
-                                <li class="flex items-center">
-                                    <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
-                                         fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd"
-                                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                              clip-rule="evenodd"></path>
-                                    </svg>
-                                    Hair Dryer
-                                </li>
-                                <li class="flex items-center">
-                                    <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
-                                         fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd"
-                                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                              clip-rule="evenodd"></path>
-                                    </svg>
-                                    Safe Box
-                                </li>
-                                <li class="flex items-center">
-                                    <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
-                                         fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd"
-                                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                              clip-rule="evenodd"></path>
-                                    </svg>
-                                    Alarm System
-                                </li>
-                                <li class="flex items-center">
-                                    <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
-                                         fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd"
-                                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                              clip-rule="evenodd"></path>
-                                    </svg>
-                                    Security Door
-                                </li>
-                                <li class="flex items-center">
-                                    <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
-                                         fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd"
-                                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                              clip-rule="evenodd"></path>
-                                    </svg>
-                                    Thermal Shut-off aluminum frames
-                                </li>
-                                <li class="flex items-center">
-                                    <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
-                                         fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd"
-                                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                              clip-rule="evenodd"></path>
-                                    </svg>
-                                    Shower
-                                </li>
-                                <li class="flex items-center">
-                                    <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
-                                         fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd"
-                                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                              clip-rule="evenodd"></path>
-                                    </svg>
-                                    Bathtub
-                                </li>
-                                <li class="flex items-center">
-                                    <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
-                                         fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd"
-                                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                              clip-rule="evenodd"></path>
-                                    </svg>
-                                    Bidet
-                                </li>
-                                <li class="flex items-center">
-                                    <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
-                                         fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd"
-                                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                              clip-rule="evenodd"></path>
-                                    </svg>
-                                    Hot water 24/7
-                                </li>
-                                <li class="flex items-center">
-                                    <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
-                                         fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd"
-                                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                              clip-rule="evenodd"></path>
-                                    </svg>
-                                    Shower Gel, Liquid soap and Shampoo
-                                </li>
-                                <li class="flex items-center">
-                                    <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
-                                         fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd"
-                                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                              clip-rule="evenodd"></path>
-                                    </svg>
-                                    Toilet paper
-                                </li>
-                                <li class="flex items-center">
-                                    <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
-                                         fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd"
-                                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                              clip-rule="evenodd"></path>
-                                    </svg>
-                                    Towels
-                                </li>
-                                <li class="flex items-center">
-                                    <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
-                                         fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd"
-                                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                              clip-rule="evenodd"></path>
-                                    </svg>
-                                    Linens
-                                </li>
-                                <li class="flex items-center">
-                                    <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
-                                         fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd"
-                                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                              clip-rule="evenodd"></path>
-                                    </svg>
-                                    Hangers
-                                </li>
-                                <li class="flex items-center">
-                                    <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
-                                         fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd"
-                                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                              clip-rule="evenodd"></path>
-                                    </svg>
-                                    Clothing cabinets with large storage space
-                                </li>
-                                <li class="flex items-center">
-                                    <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
-                                         fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd"
-                                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                              clip-rule="evenodd"></path>
-                                    </svg>
-                                    Iron & iron board
-                                </li>
-                                <li class="flex items-center">
-                                    <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
-                                         fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd"
-                                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                              clip-rule="evenodd"></path>
-                                    </svg>
-                                    Drying rack
-                                </li>
-                                <li class="flex items-center">
-                                    <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
-                                         fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd"
-                                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                              clip-rule="evenodd"></path>
-                                    </svg>
-                                    COCOMAT beds (1.70m x 2.00m) with different type mattress in each room
-                                </li>
-                                <li class="flex items-center">
-                                    <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
-                                         fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd"
-                                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                              clip-rule="evenodd"></path>
-                                    </svg>
-                                    COCOMAT pillows
-                                </li>
-                                <li class="flex items-center">
-                                    <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
-                                         fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd"
-                                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                              clip-rule="evenodd"></path>
-                                    </svg>
-                                    Extra pillows
-                                </li>
-                                <li class="flex items-center">
-                                    <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
-                                         fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd"
-                                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                              clip-rule="evenodd"></path>
-                                    </svg>
-                                    Large Sofabed
-                                </li>
-                            </ul>
-
-
-                        </div>
-                    </div>
-
-
-                </div><!--end grid-->
-            </div><!--end container-->
-        </section><!--end section-->
-        <!-- End -->
-
-        @@include("partials/footer/villadonna-footer.html")
-
-<!--        @@include("partials/cookies.html")-->
-
-        <!-- Back to top -->
-<a href="#" onclick="topFunction()" id="back-to-top" class="back-to-top fixed hidden text-lg rounded-full z-10 bottom-5 end-5 h-9 w-9 text-center bg-gold-1 text-white leading-9"><i class="uil uil-arrow-up"></i></a>
-        <!-- Back to top -->
-
-<!--        @@include("partials/switcher.html")-->
-
-        <!-- JAVASCRIPTS -->
-        <script src="assets/libs/tiny-slider/min/tiny-slider.js"></script>
-        <script src="assets/libs/tobii/js/tobii.min.js"></script>
-        <script src="assets/libs/feather-icons/feather.min.js"></script>
-        @@include("partials/script-file.html")
-        <!-- JAVASCRIPTS -->
-    </body>
+<script src="assets/libs/tiny-slider/min/tiny-slider.js"></script>
+<script src="assets/libs/tobii/js/tobii.min.js"></script>
+<script src="assets/libs/feather-icons/feather.min.js"></script>
+@@include("partials/script-file.html")
+</body>
 </html>
