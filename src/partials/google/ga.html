@@ -4,13 +4,14 @@
         console.log('enabled google analytics for production');
         <!-- Google tag (gtag.js) -->
 
-        fetch('https://www.googletagmanager.com/gtag/js?id=G-SLQVG5KZ6T').then( res => {
+        fetch('https://www.googletagmanager.com/gtag/js?id=G-SLQVG5KZ6T').then(res => {
             if (!res.ok) {
+                console.log('nok');
                 return false;
             }
             console.log('ok');
             return res.blob();
-        }).then((blob)=>{
+        }).then((blob) => {
             var objectURL = URL.createObjectURL(blob);
             var sc = document.createElement("script");
             sc.setAttribute("src", objectURL);
