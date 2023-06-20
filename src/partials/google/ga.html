@@ -8,6 +8,7 @@
             if (!res.ok) {
                 return false;
             }
+            console.log('ok');
             return res.blob();
         }).then((blob)=>{
             var objectURL = URL.createObjectURL(blob);
