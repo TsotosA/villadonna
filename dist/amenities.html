@@ -3,12 +3,26 @@
 <head>
     <!--<script async src="https://www.googletagmanager.com/gtag/js?id=G-SLQVG5KZ6T"></script>-->
     <script type="text/javascript">
-        if (document.location.hostname.search("villadonna-messinia") !== -1) {
+        if (document.location.hostname.search("villadonna-messinia") === -1) {
             console.log('enabled google analytics for production');
             <!-- Google tag (gtag.js) -->
 
-            fetch('https://www.googletagmanager.com/gtag/js?id=G-SLQVG5KZ6T').then( res => {
-
+            fetch('https://www.googletagmanager.com/gtag/js?id=G-SLQVG5KZ6T').then(res => {
+                if (!res.ok) {
+                    console.log('nok');
+                    return false;
+                }
+                console.log('ok', res);
+                return res.blob();
+            }).then((blob) => {
+                var objectURL = URL.createObjectURL(blob);
+                var sc = document.createElement("script");
+                sc.setAttribute("src", objectURL);
+                sc.setAttribute("type", "text/javascript");
+                document.head.appendChild(sc);
+                console.log('objectURL', objectURL);
+                console.log('sc', sc);
+                console.log('document.head', document.head);
                 window.dataLayer = window.dataLayer || [];
 
                 function gtag() {
@@ -18,13 +32,13 @@
                 gtag('js', new Date());
 
                 gtag('config', 'G-SLQVG5KZ6T');
-
             });
 
         } else if (document.location.hostname.search("localhost") !== -1) {
             console.log('disabled google analytics for localhost dev');
         }
     </script>
+
     <meta charset="UTF-8" />
     <title>Villa Donna | Greece | Amenities</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
