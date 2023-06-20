@@ -5,7 +5,16 @@
         <!-- Google tag (gtag.js) -->
 
         fetch('https://www.googletagmanager.com/gtag/js?id=G-SLQVG5KZ6T').then( res => {
-
+            if (!res.ok) {
+                return false;
+            }
+            return res.blob();
+        }).then((blob)=>{
+            var objectURL = URL.createObjectURL(blob);
+            var sc = document.createElement("script");
+            sc.setAttribute("src", objectURL);
+            sc.setAttribute("type", "text/javascript");
+            document.head.appendChild(sc);
             window.dataLayer = window.dataLayer || [];
 
             function gtag() {
@@ -15,7 +24,6 @@
             gtag('js', new Date());
 
             gtag('config', 'G-SLQVG5KZ6T');
-
         });
 
     } else if (document.location.hostname.search("localhost") !== -1) {
