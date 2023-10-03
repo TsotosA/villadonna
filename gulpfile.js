@@ -245,3 +245,4 @@ gulp.task('default', gulp.series(gulp.parallel('clean:packageLock', 'clean:dist'
 
 // Build(Development) Task
 gulp.task('build', gulp.series('clean:packageLock', 'clean:dist', 'copy:all', 'copy:libs', 'fileinclude', 'scss', 'icons', 'js', 'html'));
+gulp.task('prod:deploy', gulp.series('clean:packageLock', 'clean:dist', 'copy:all', 'copy:libs', 'fileinclude', 'scss', 'icons', 'js', 'html'));
