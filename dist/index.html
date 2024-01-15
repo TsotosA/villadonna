@@ -1,43 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="light scroll-smooth" dir="ltr">
 <head>
-    <!--<script async src="https://www.googletagmanager.com/gtag/js?id=G-SLQVG5KZ6T"></script>-->
-    <script type="text/javascript">
-        if (document.location.hostname.search("villadonna-messinia") !== -1) {
-            console.log('enabled google analytics for production');
-            <!-- Google tag (gtag.js) -->
-
-            fetch('https://www.googletagmanager.com/gtag/js?id=G-SLQVG5KZ6T').then(res => {
-                if (!res.ok) {
-                    console.log('nok');
-                    return false;
-                }
-                console.log('ok', res);
-                return res.blob();
-            }).then((blob) => {
-                var objectURL = URL.createObjectURL(blob);
-                var sc = document.createElement("script");
-                sc.setAttribute("src", objectURL);
-                sc.setAttribute("type", "text/javascript");
-                document.head.appendChild(sc);
-                console.log('objectURL', objectURL);
-                console.log('sc', sc);
-                console.log('document.head', document.head);
-                window.dataLayer = window.dataLayer || [];
-
-                function gtag() {
-                    dataLayer.push(arguments);
-                }
-
-                gtag('js', new Date());
-
-                gtag('config', 'G-SLQVG5KZ6T');
-            });
-
-        } else if (document.location.hostname.search("localhost") !== -1) {
-            console.log('disabled google analytics for localhost dev');
-        }
-    </script>
 
     <meta charset="UTF-8" />
     <title>Villa Donna | Greece | Home</title>
@@ -53,9 +16,6 @@
 <!--    <link href="assets/libs/tiny-slider/tiny-slider.css" rel="stylesheet">-->
 <!--    <link href="assets/libs/tobii/css/tobii.min.css" rel="stylesheet">-->
 <!--    <link href="assets/libs/js-datepicker/datepicker.min.css" rel="stylesheet">-->
-    <!-- Main Css -->
-
-    <link rel="stylesheet" href="assets/css/tailwind.css" />
 
 </head>
 
@@ -244,6 +204,10 @@
 <a href="#" onclick="topFunction()" id="back-to-top"
    class="back-to-top fixed hidden text-lg rounded-full z-10 bottom-5 end-5 h-9 w-9 text-center bg-gold-1 text-white leading-9"><i
         class="uil uil-arrow-up"></i></a>
+<!-- Main Css -->
+
+<link rel="stylesheet" href="assets/css/tailwind.css" />
+
 
 <script src="assets/libs/tiny-slider/min/tiny-slider.js"></script>
 <script src="assets/libs/tobii/js/tobii.min.js"></script>
@@ -259,5 +223,44 @@
 
 <script src="assets/js/plugins.init.js"></script>
 <script src="assets/js/app.js"></script>
+<!--<script async src="https://www.googletagmanager.com/gtag/js?id=G-SLQVG5KZ6T"></script>-->
+<script type="text/javascript">
+    if (document.location.hostname.search("villadonna-messinia") !== -1) {
+        console.log('enabled google analytics for production');
+        <!-- Google tag (gtag.js) -->
+
+        fetch('https://www.googletagmanager.com/gtag/js?id=G-SLQVG5KZ6T').then(res => {
+            if (!res.ok) {
+                console.log('nok');
+                return false;
+            }
+            console.log('ok', res);
+            return res.blob();
+        }).then((blob) => {
+            var objectURL = URL.createObjectURL(blob);
+            var sc = document.createElement("script");
+            sc.setAttribute("src", objectURL);
+            sc.setAttribute("type", "text/javascript");
+            document.head.appendChild(sc);
+            console.log('objectURL', objectURL);
+            console.log('sc', sc);
+            console.log('document.head', document.head);
+            window.dataLayer = window.dataLayer || [];
+
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+
+            gtag('js', new Date());
+
+            gtag('config', 'G-SLQVG5KZ6T');
+        });
+
+    } else if (document.location.hostname.search("localhost") !== -1) {
+        console.log('disabled google analytics for localhost dev');
+    }
+</script>
+
+
 </body>
 </html>
