@@ -1411,8 +1411,8 @@ video {
 .bg-\[url\(\'\.\.\/\.\.\/assets\/images\/company\/aboutus\.jpg\'\)\]{
   background-image: url('../../assets/images/company/aboutus.jpg') !important;
 }
-.bg-\[url\(\'\.\.\/\.\.\/assets\/images\/gallery\/area\/20230106_105141\.jpg\'\)\]{
-  background-image: url('../../assets/images/gallery/area/20230106_105141.jpg') !important;
+.bg-\[url\(\'\.\.\/\.\.\/assets\/images\/gallery\/area\/20230526_204155-lowres\.jpg\'\)\]{
+  background-image: url('../../assets/images/gallery/area/20230526_204155-lowres.jpg') !important;
 }
 .bg-\[url\(\'\.\.\/\.\.\/assets\/images\/gallery\/exterior\/20230527_194111-min-narrowed\.webp\'\)\]{
   background-image: url('../../assets/images/gallery/exterior/20230527_194111-min-narrowed.webp') !important;
@@ -1449,9 +1449,6 @@ video {
 }
 .bg-none{
   background-image: none !important;
-}
-.bg-\[url\(\'\.\.\/\.\.\/assets\/images\/gallery\/area\/20230526_204155-lowres\.jpg\'\)\]{
-  background-image: url('../../assets/images/gallery/area/20230526_204155-lowres.jpg') !important;
 }
 .from-indigo-500{
   --tw-gradient-from: #6366f1 var(--tw-gradient-from-position) !important;
