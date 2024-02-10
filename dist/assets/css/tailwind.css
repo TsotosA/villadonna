@@ -1450,6 +1450,9 @@ video {
 .bg-none{
   background-image: none !important;
 }
+.bg-\[url\(\'\.\.\/\.\.\/assets\/images\/gallery\/area\/20230526_204155-lowres\.jpg\'\)\]{
+  background-image: url('../../assets/images/gallery/area/20230526_204155-lowres.jpg') !important;
+}
 .from-indigo-500{
   --tw-gradient-from: #6366f1 var(--tw-gradient-from-position) !important;
   --tw-gradient-to: rgb(99 102 241 / 0) var(--tw-gradient-to-position) !important;
