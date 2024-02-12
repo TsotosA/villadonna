@@ -3615,8 +3615,8 @@ video {
   .sm\:h-2\/3{
     height: 66.666667% !important;
   }
-  .sm\:bg-\[url\(\'\.\.\/\.\.\/assets\/images\/gallery\/exterior\/MAIN_PHOTO-min-widened\.webp\'\)\]{
-    background-image: url('../../assets/images/gallery/exterior/MAIN_PHOTO-min-widened.webp') !important;
+  .sm\:bg-\[url\(\'\.\.\/\.\.\/assets\/images\/gallery\/exterior\/MAIN_PHOTO-min-widened_topublish\.jpg\'\)\]{
+    background-image: url('../../assets/images/gallery/exterior/MAIN_PHOTO-min-widened_topublish.jpg') !important;
   }
 }
 
