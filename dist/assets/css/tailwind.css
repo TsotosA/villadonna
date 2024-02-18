@@ -1408,6 +1408,24 @@ video {
 .bg-opacity-50{
   --tw-bg-opacity: 0.5 !important;
 }
+.bg-\[url\(\'\.\.\/\.\.\/assets\/images\/amenities\/Aerial-16\.jpg\'\)\]{
+  background-image: url('../../assets/images/amenities/Aerial-16.jpg') !important;
+}
+.bg-\[url\(\'\.\.\/\.\.\/assets\/images\/amenities\/Exteriors-109\.jpg\'\)\]{
+  background-image: url('../../assets/images/amenities/Exteriors-109.jpg') !important;
+}
+.bg-\[url\(\'\.\.\/\.\.\/assets\/images\/amenities\/Exteriors-129\.jpg\'\)\]{
+  background-image: url('../../assets/images/amenities/Exteriors-129.jpg') !important;
+}
+.bg-\[url\(\'\.\.\/\.\.\/assets\/images\/amenities\/Exteriors-144\.jpg\'\)\]{
+  background-image: url('../../assets/images/amenities/Exteriors-144.jpg') !important;
+}
+.bg-\[url\(\'\.\.\/\.\.\/assets\/images\/amenities\/Living_room-Diningroom1-min\.jpg\'\)\]{
+  background-image: url('../../assets/images/amenities/Living_room-Diningroom1-min.jpg') !important;
+}
+.bg-\[url\(\'\.\.\/\.\.\/assets\/images\/amenities\/Livingroom-Diningroom-23-min\.jpg\'\)\]{
+  background-image: url('../../assets/images/amenities/Livingroom-Diningroom-23-min.jpg') !important;
+}
 .bg-\[url\(\'\.\.\/\.\.\/assets\/images\/company\/aboutus\.jpg\'\)\]{
   background-image: url('../../assets/images/company/aboutus.jpg') !important;
 }
@@ -1419,15 +1437,6 @@ video {
 }
 .bg-\[url\(\'\.\.\/\.\.\/assets\/images\/gallery\/exterior\/20230527_194853-min_topublish\.jpg\'\)\]{
   background-image: url('../../assets/images/gallery/exterior/20230527_194853-min_topublish.jpg') !important;
-}
-.bg-\[url\(\'\.\.\/\.\.\/assets\/images\/gallery\/exterior\/20230527_205353-min\.jpg\'\)\]{
-  background-image: url('../../assets/images/gallery/exterior/20230527_205353-min.jpg') !important;
-}
-.bg-\[url\(\'\.\.\/\.\.\/assets\/images\/gallery\/interior\/Kitchen-6-min\.jpg\'\)\]{
-  background-image: url('../../assets/images/gallery/interior/Kitchen-6-min.jpg') !important;
-}
-.bg-\[url\(\'\.\.\/\.\.\/assets\/images\/gallery\/interior\/Room-min\.jpg\'\)\]{
-  background-image: url('../../assets/images/gallery/interior/Room-min.jpg') !important;
 }
 .bg-\[url\(\'\.\.\/\.\.\/assets\/images\/villadonna\/emre-9SDh6PF2g_U-unsplash\.jpg\'\)\]{
   background-image: url('../../assets/images/villadonna/emre-9SDh6PF2g_U-unsplash.jpg') !important;
