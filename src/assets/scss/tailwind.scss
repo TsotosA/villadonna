@@ -58,3 +58,13 @@
   background-color: rgb(255, 0, 0);
 }
 
+.social-media {
+  transition: all .3s; /* Animation */
+}
+
+.social-media:hover {
+  transform: scale(1.3);
+  rotate: -10deg;
+}
+
+
