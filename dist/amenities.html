@@ -122,7 +122,7 @@
     </div><!--end container-->
 </nav><!--end header-->
 <!-- End Navbar -->
-<div class="absolute inset-0 md:bg-gradient-to-b from-main-green from-0% to-10%"></div>
+<div class="absolute inset-0 md:bg-gradient-to-b from-main-green from-0% to-10%" style="z-index: 998"></div>
 
 <section id="controls-carousel" class="relative" data-carousel="static">
     <div class="overflow-hidden relative h-screen inset-0">
@@ -153,9 +153,10 @@
     </div>
 
     <button type="button"
-            class="flex absolute top-0 start-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+            style="z-index: 1000"
+            class="flex absolute top-0 start-0 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
             data-carousel-prev="">
-                <span class="inline-flex justify-center items-center w-8 h-8 rounded-full border border-white hover:border-indigo-600 hover:bg-indigo-600 group-focus:outline-none">
+                <span class="inline-flex justify-center items-center w-8 h-8 rounded-full border border-white hover:border-gold-1 hover:bg-gold-1 group-focus:outline-none">
                     <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                          xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -165,9 +166,10 @@
                 </span>
     </button>
     <button type="button"
-            class="flex absolute top-0 end-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+            style="z-index: 1000"
+            class="flex absolute top-0 end-0 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
             data-carousel-next="">
-                <span class="inline-flex justify-center items-center w-8 h-8 rounded-full border border-white hover:border-indigo-600 hover:bg-indigo-600 group-focus:outline-none">
+                <span class="inline-flex justify-center items-center w-8 h-8 rounded-full border border-white hover:border-gold-1 hover:bg-gold-1 group-focus:outline-none">
                     <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                          xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
