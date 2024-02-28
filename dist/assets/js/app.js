@@ -210,16 +210,16 @@ function topFunction() {
 /*********************/
 /*   Feather Icons   */
 /*********************/
-feather.replace();
+// feather.replace();
 
 /*********************/
 /*     Small Menu    */
 /*********************/
-try {
-    var spy = new Gumshoe('#navmenu-nav a');
-} catch (err) {
-
-}
+// try {
+//     var spy = new Gumshoe('#navmenu-nav a');
+// } catch (err) {
+//
+// }
 
 /*********************/
 /*      WoW Js       */
