@@ -3711,10 +3711,6 @@ video {
   .md\:grid-cols-6{
     grid-template-columns: repeat(6, minmax(0, 1fr)) !important;
   }
-  .md\:bg-gradient-to-b{
-    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--tw-gradient-stops))) !important;
-    background-image: linear-gradient(to bottom, var(--tw-gradient-stops)) !important;
-  }
   .md\:px-4{
     padding-left: 1rem !important;
     padding-right: 1rem !important;
