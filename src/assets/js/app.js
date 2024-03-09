@@ -48,13 +48,13 @@ function fn() {
 /*********************/
 function toggleMenu() {
     document.getElementById('isToggle').classList.toggle('open');
-    var isOpen = document.getElementById('navigation')
+    const isOpen = document.getElementById('navigation');
     if (isOpen.style.display === "block") {
         isOpen.style.display = "none";
     } else {
         isOpen.style.display = "block";
     }
-};
+}
 /*********************/
 /*    Menu Active    */
 /*********************/
@@ -197,7 +197,7 @@ function topFunction() {
 /*  Active Sidebar   */
 /*********************/
 (function () {
-    var current = location.pathname.substring(location.pathname.lastIndexOf('/') + 1);;
+    var current = location.pathname.substring(location.pathname.lastIndexOf('/') + 1);
     if (current === "") return;
     var menuItems = document.querySelectorAll('.sidebar-nav a');
     for (var i = 0, len = menuItems.length; i < len; i++) {
@@ -236,10 +236,10 @@ try {
 
 try {
     function validateForm() {
-        var name = document.forms["myForm"]["name"].value;
-        var email = document.forms["myForm"]["email"].value;
-        var subject = document.forms["myForm"]["subject"].value;
-        var comments = document.forms["myForm"]["comments"].value;
+        let name = document.forms["myForm"]["name"].value;
+        let email = document.forms["myForm"]["email"].value;
+        let subject = document.forms["myForm"]["subject"].value;
+        let comments = document.forms["myForm"]["comments"].value;
         document.getElementById("error-msg").style.opacity = 0;
         document.getElementById('error-msg').innerHTML = "";
         if (name == "" || name == null) {

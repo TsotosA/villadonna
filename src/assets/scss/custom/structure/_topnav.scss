@@ -146,7 +146,7 @@
       > li {
         @apply ltr:float-left rtl:float-right block relative my-0 mx-[10px];
         > a {
-          @apply block text-black dark:text-white text-[13px] bg-transparent font-bold tracking-[1px] leading-6 uppercase px-[15px] #{!important};
+          @apply block text-black dark:text-white text-[13px] bg-transparent font-bold tracking-[1px] leading-6 uppercase #{!important};
           &:hover, 
           &:active {
             @apply text-indigo-600;

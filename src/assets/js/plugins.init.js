@@ -1665,7 +1665,7 @@ try {
 //=========================================//
 try {
     var loadFile = function (event) {
-        
+
         var image = document.getElementById(event.target.name);
         image.src = URL.createObjectURL(event.target.files[0]);
     };
@@ -1673,3 +1673,38 @@ try {
 } catch (error) {
     
 }
+
+
+try {
+    const openEmailDialog = document.getElementById('openEmailDialog');
+    const collectEmail = document.getElementById('collectEmail');
+    // const outputBox = document.querySelector('output');
+    // const selectEl = document.querySelector('input');
+    // const confirmBtn = document.getElementById('confirmBtn');
+    // const closeDialog = document.getElementById('closeDialog');
+
+    openEmailDialog.addEventListener('click', function onOpen() {
+        if (typeof collectEmail.showModal === "function") {
+            collectEmail.showModal();
+        } else {
+            alert("The <dialog> API is not supported by this browser");
+        }
+    });
+
+    // closeDialog.addEventListener("click", function() {
+    //     collectEmail.close();
+    // });
+
+    collectEmail.addEventListener("click", event => {
+        const rect = collectEmail.getBoundingClientRect();
+        if (event.clientY < rect.top || event.clientY > rect.bottom ||
+            event.clientX < rect.left || event.clientX > rect.right) {
+            collectEmail.close();
+        }
+    });
+} catch (e) {
+    console.log(e)
+}
+
+
+
