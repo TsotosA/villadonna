@@ -1682,7 +1682,11 @@ try {
     // const selectEl = document.querySelector('input');
     // const confirmBtn = document.getElementById('confirmBtn');
     // const closeDialog = document.getElementById('closeDialog');
-
+    let hasSeenSeasonalOffer= sessionStorage.getItem('seenSeasonalOffer');
+    if (!hasSeenSeasonalOffer) {
+        sessionStorage.setItem('seenSeasonalOffer', 'true');
+        collectEmail.showModal();
+    }
     openEmailDialog.addEventListener('click', function onOpen() {
         if (typeof collectEmail.showModal === "function") {
             collectEmail.showModal();
