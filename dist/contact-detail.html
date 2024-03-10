@@ -87,7 +87,7 @@
         <div class="menu-extras">
             <div class="menu-item">
                 <!-- Mobile menu toggle-->
-                <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
+                <a class="navbar-toggle" id="isToggle" onclick="toggleMobileMenu()">
                     <div class="lines">
                         <span></span>
                         <span></span>
@@ -156,11 +156,20 @@
     </div><!--end container-->
 </nav><!--end header-->
 <!-- End Navbar -->
+<div class="overlay" id="myNav">
+    <a class="closebtn" href="javascript:void(0)" onclick="toggleMobileMenu()">&times;</a>
+    <div class="overlay-content">
+        <a class="py-5" href="index.html">Home</a>
+        <a class="p-5" href="amenities.html">Amenities</a>
+        <a class="p-5" href="villadonna-portfolio.html">Gallery</a>
+        <a class="p-5" href="contact-detail.html">Contact</a>
+    </div>
+</div>
 <div class="absolute inset-0 bg-gradient-to-b from-main-green from-0% to-10%"></div>
 <section
         class="h-screen flex py-36 w-full items-center bg-[url('../../assets/images/villadonna/kevin-martin-jose-1hgw5wp81yU-unsplash.jpg')] bg-center bg-no-repeat bg-cover">
 <!--    <div class="absolute inset-0 bg-black/50"></div>-->
-    <div class="container" style="z-index: 1000">
+    <div class="container" style="z-index: 999">
         <div class="lg:flex justify-center mt-12">
             <div class="lg:w-11/12 bg-white dark:bg-slate-900 rounded-md shadow-lg dark:shadow-gray-800 overflow-hidden">
                 <div class="grid md:grid-cols-12 grid-cols-1 items-center">

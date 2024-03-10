@@ -1536,6 +1536,9 @@ video {
 .p-1{
   padding: 0.25rem !important;
 }
+.p-1\.5{
+  padding: 0.375rem !important;
+}
 .p-2{
   padding: 0.5rem !important;
 }
@@ -2920,10 +2923,6 @@ video {
             margin-inline-start: 0px;
     opacity: 1;
   }
-
-  .navbar-toggle{
-    display: block;
-  }
 }
 @media (max-width: 425px) {
   #topnav .buy-menu-btn{
@@ -3258,6 +3257,49 @@ h1 {
   -webkit-transform: translate(5px, -50%);
           transform: translate(5px, -50%);
   opacity: 1;
+}
+
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-y: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
 }
 
 .after\:absolute::after{

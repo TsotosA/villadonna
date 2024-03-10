@@ -342,18 +342,9 @@ try{
 }
 catch(err){}
 
-/*********************/
-/* Weather */
-/*********************/
 
-// try {
-//     (async function () {
-//         const response = await fetch('https://api.open-meteo.com/v1/forecast?latitude=37.25&longitude=21.67&current_weather=true&&timezone=auto');
-//         const jsonData = await response.json();
-//         const currentTmpElement = document.querySelector('#currentTemp');
-//         currentTmpElement.textContent = jsonData.current_weather.temperature;
-//         setTimeout(arguments.callee, 1800000);
-//     })();
-// } catch (e) {
-//     console.log(e);
-// }
+function toggleMobileMenu() {
+    const nav = document.getElementById("myNav");
+    let isOpen = nav.style.height === '100%';
+    nav.style.height = isOpen ? '0%' : '100%';
+}
