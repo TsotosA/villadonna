@@ -3016,10 +3016,22 @@ video {
   /* Animation */
 }
 
+.social-media-right {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  /* Animation */
+}
+
 .social-media:hover {
   -webkit-transform: scale(1.3);
           transform: scale(1.3);
   rotate: -10deg;
+}
+
+.social-media-right:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  rotate: 10deg;
 }
 
 .ribbon {
@@ -3300,6 +3312,31 @@ h1 {
   top: 20px;
   right: 45px;
   font-size: 60px;
+}
+
+.inline-reference {
+  all: revert;
+  text-decoration: none;
+}
+
+.inline-reference:hover {
+  text-decoration: underline;
+}
+
+#tooltip {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #ffffff;
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 4px;
+  font-size: 90%;
+  max-width: 300px;
+  display: none;
 }
 
 .after\:absolute::after{
