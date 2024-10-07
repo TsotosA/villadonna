@@ -1674,41 +1674,41 @@ try {
     
 }
 
-
-try {
-    const openEmailDialog = document.getElementById('openEmailDialog');
-    const collectEmail = document.getElementById('collectEmail');
-    // const outputBox = document.querySelector('output');
-    // const selectEl = document.querySelector('input');
-    // const confirmBtn = document.getElementById('confirmBtn');
-    // const closeDialog = document.getElementById('closeDialog');
-    let hasSeenSeasonalOffer= sessionStorage.getItem('seenSeasonalOffer');
-    if (!hasSeenSeasonalOffer) {
-        sessionStorage.setItem('seenSeasonalOffer', 'true');
-        collectEmail.showModal();
-    }
-    openEmailDialog.addEventListener('click', function onOpen() {
-        if (typeof collectEmail.showModal === "function") {
-            collectEmail.showModal();
-        } else {
-            alert("The <dialog> API is not supported by this browser");
-        }
-    });
-
-    // closeDialog.addEventListener("click", function() {
-    //     collectEmail.close();
-    // });
-
-    collectEmail.addEventListener("click", event => {
-        const rect = collectEmail.getBoundingClientRect();
-        if (event.clientY < rect.top || event.clientY > rect.bottom ||
-            event.clientX < rect.left || event.clientX > rect.right) {
-            collectEmail.close();
-        }
-    });
-} catch (e) {
-    console.log(e)
-}
+// TODO: Seasonal Offer
+// try {
+//     const openEmailDialog = document.getElementById('openEmailDialog');
+//     const collectEmail = document.getElementById('collectEmail');
+//     // const outputBox = document.querySelector('output');
+//     // const selectEl = document.querySelector('input');
+//     // const confirmBtn = document.getElementById('confirmBtn');
+//     // const closeDialog = document.getElementById('closeDialog');
+//     let hasSeenSeasonalOffer= sessionStorage.getItem('seenSeasonalOffer');
+//     if (!hasSeenSeasonalOffer) {
+//         sessionStorage.setItem('seenSeasonalOffer', 'true');
+//         collectEmail.showModal();
+//     }
+//     openEmailDialog.addEventListener('click', function onOpen() {
+//         if (typeof collectEmail.showModal === "function") {
+//             collectEmail.showModal();
+//         } else {
+//             alert("The <dialog> API is not supported by this browser");
+//         }
+//     });
+//
+//     // closeDialog.addEventListener("click", function() {
+//     //     collectEmail.close();
+//     // });
+//
+//     collectEmail.addEventListener("click", event => {
+//         const rect = collectEmail.getBoundingClientRect();
+//         if (event.clientY < rect.top || event.clientY > rect.bottom ||
+//             event.clientX < rect.left || event.clientX > rect.right) {
+//             collectEmail.close();
+//         }
+//     });
+// } catch (e) {
+//     console.log(e)
+// }
 
 
 
